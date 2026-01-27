@@ -21,7 +21,7 @@
   let currentZipName = '';
   let commonBase = '';
   let taskInputs = [];
-  const DEFAULT_TASK = 'Freely explore the site and familiarise yourself with the interface.';
+  const DEFAULT_TASK = 'Take a moment to explore the map and familiarise yourself with the interface.';
   const textDecoder = new TextDecoder();
 
   function splitPath(p){ return String(p||'').split('/').filter(Boolean); }
@@ -93,8 +93,8 @@
     if (totalSizeEl) totalSizeEl.textContent = formatBytes(total);
     if (!files.length){
       const message = currentZipName
-        ? 'The uploaded ZIP '+esc(currentZipName)+' does not contain any files.'
-        : 'Upload a ZIP file containing your project.';
+        ? 'The ZIP '+esc(currentZipName)+' does not seem to contain any files.'
+        : 'Add a ZIP file with your map.';
       list.innerHTML = '<div class="empty">'+message+'</div>';
       return;
     }
@@ -130,7 +130,7 @@
   if (clearBtn){
     clearBtn.addEventListener('click', ()=>{
       clearSelection();
-      log('ZIP selection cleared.');
+      log('ZIP removed.');
     });
   }
 
@@ -140,17 +140,17 @@
 
   async function loadZipFile(file){
     if (!file){
-      log('Please select a ZIP file.');
+      log('Please choose a ZIP file.');
       return;
     }
     if (!isZipFile(file)){
-      log('Unsupported file type. Please provide a .zip archive.');
+      log('That file does not look like a ZIP archive. Please choose a .zip file.');
       return;
     }
     buildBtn.disabled = true;
     try{
       buildLog.textContent = '';
-      log('Reading '+file.name+' ...');
+      log('Reading '+file.name+'…');
       const arrayBuffer = await file.arrayBuffer();
       const zip = await JSZip.loadAsync(arrayBuffer);
       const entries = [];
@@ -171,13 +171,13 @@
       files = entries;
       currentZipName = file.name;
       renderList();
-      log('Loaded '+entries.length+' files from '+file.name+'.');
+      log('Loaded '+entries.length+' files.');
     } catch(err){
       files = [];
       currentZipName = '';
       commonBase = '';
       renderList();
-      log('Failed to read ZIP: '+ (err && err.message ? err.message : err));
+      log('Could not read the ZIP. ' + (err && err.message ? err.message : err));
     } finally {
       buildBtn.disabled = false;
     }
@@ -190,7 +190,7 @@
     const candidates = Array.from(e.dataTransfer.files || []);
     const zipFile = candidates.find(isZipFile);
     if (!zipFile){
-      log('Please drop a ZIP archive.');
+      log('Please drop a ZIP file.');
       return;
     }
     await loadZipFile(zipFile);
@@ -210,7 +210,7 @@
   if (envWarning){
     if (location.protocol === 'file:'){
       envWarning.classList.remove('hidden');
-      envWarning.innerHTML = 'You are opening the builder from <code>file://</code>. Some browsers block loading local files via <code>fetch()</code>, which can cause “Failed to fetch” when bundling the MapLogger client. Please run this page through a local server (e.g., VS Code “Live Server”) and open it via <code>http://localhost/...</code>.';
+      envWarning.innerHTML = 'You are opening the builder from <code>file://</code>. Some browsers block reading local files, which can cause a “Failed to fetch” error during packaging. If that happens, open this page through a local server (e.g., VS Code “Live Server”) using <code>http://localhost/…</code>.';
     }
   }
   // ---- Tasks (bubbles) ----
@@ -221,7 +221,7 @@
     const input = document.createElement('input');
     input.className = 'task-input';
     input.type = 'text';
-    input.placeholder = 'Describe the task (e.g., Find nearest pharmacy in Olomouc)';
+    input.placeholder = 'Write a short task (e.g., Find the nearest pharmacy in Olomouc)';
     if (value) input.value = value;
     const btn = document.createElement('button');
     btn.type = 'button';
@@ -265,7 +265,7 @@
   function updateTaskPreview(){
     const tasks = getTasks();
     const first = tasks.length ? tasks[0] : '';
-    if (taskPreviewLabel){ taskPreviewLabel.textContent = first ? ('Task 1 – ' + first) : 'Task 1'; }
+    if (taskPreviewLabel){ taskPreviewLabel.textContent = first ? ('Task 1 — ' + first) : 'Task 1'; }
     if (tasksCountEl){ tasksCountEl.textContent = String(tasks.length); }
     updateWorkflow();
   }
@@ -273,7 +273,7 @@
     if (!workflowEl) return;
     const parts = [];
     const hasWelcome = !!(welcomeMessageEl && welcomeMessageEl.value && welcomeMessageEl.value.trim());
-    if (hasWelcome){ parts.push({type:'welcome', label:'Welcome'}); }
+    if (hasWelcome){ parts.push({type:'welcome', label:'Intro'}); }
     const tasks = getTasks();
     for (let i=0;i<tasks.length;i++){
       parts.push({type:'task', num:i+1, label:'Task '+(i+1)});
@@ -283,7 +283,7 @@
       const sep = (idx<parts.length-1)?'<span class="wf-sep">→</span>':'';
       return step+sep;
     }).join('');
-    workflowEl.innerHTML = html || '<span class="help">No tasks yet. Add at least one task to start the flow.</span>';
+    workflowEl.innerHTML = html || '<span class="help">No tasks yet — add at least one to continue.</span>';
   }
   if (welcomeMessageEl){ welcomeMessageEl.addEventListener('input', updateTaskPreview); }
   if (addTaskBtn){ addTaskBtn.addEventListener('click', ()=> addTask('')); }
@@ -327,8 +327,8 @@
     return {"client/maplogger-client.js": clientJs, "client/maplogger.css": clientCss};
   }
 
-  const LICENSE_TXT = "MIT License included with MapLogger.";
-  const README_MD = "# MapLogger\nThis ZIP was generated by MapLogger Builder.";
+  const LICENSE_TXT = "MIT Licence\n\nMapLogger is provided under the MIT Licence.";
+  const README_MD = "# MapLogger study package\n\nThis ZIP was generated by MapLogger Builder.\n\n## How to run\n\n1) Unzip the folder.\n2) Open the study entry page in a browser:\n   - If you see `ml-host.html`, open that.\n   - Otherwise open `index.html`.\n\nTip: If your browser blocks local files, host the folder on a simple local server (any static server will do).\n";
 
   function injectIntoHtml(html, tasks, sessionKey, welcomeMessage, includeClient=true, includeWelcomeStyle=false, csvBaseName, pushDownFixed){
     const tasksJson = JSON.stringify(tasks);
@@ -346,10 +346,10 @@
     if (/<\/head>/i.test(html)) modified = html.replace(/<\/head>/i, headInject+"\n</head>");
     else modified = headInject + "\n" + html;
     {
-      const toolbar = '<div id="ml-toolbar" class="ml-toolbar" role="region" aria-label="Experiment task toolbar">\
+      const toolbar = '<div id="ml-toolbar" class="ml-toolbar" role="region" aria-label="Study task toolbar">\
 <div class="ml-left"><strong id="ml-task-label">Task 1</strong></div>\
 <div class="ml-right"><button id="ml-next" class="ml-btn ml-accent" aria-label="Next task">Next →</button>\
-<button id="ml-end" class="ml-btn ml-danger ml-hidden" aria-label="End experiment">END</button></div></div>';
+<button id="ml-end" class="ml-btn ml-danger ml-hidden" aria-label="Finish study">Finish</button></div></div>';
       if (/<body[^>]*>/i.test(modified)) modified = modified.replace(/<body([^>]*)>/i, (m,a)=>'<body'+a+'>'+toolbar);
       else modified = toolbar + modified;
     }
@@ -375,18 +375,18 @@
     const jsSrc = (assets && assets.jsSrc) || 'client/maplogger-client.js';
     const tasksJson = JSON.stringify(tasks && tasks.length ? tasks : ["Task 1"]);
     const pagesJson = JSON.stringify(Array.isArray(pages)? pages : []);
-  const css = '.host-body{margin:0;background:#0b111b;color:#e7ecf3;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;overflow:hidden}#ml-toolbar{position:fixed;top:0;left:0;right:0;z-index:2147483647}.host-main{position:fixed;left:0;right:0;bottom:0;top:0}#ml-frame-wrap{position:absolute;left:0;right:0;bottom:0;top:0;background:transparent}#ml-frame{border:0;display:block;width:100%;height:100%}.host-welcome{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;padding:1rem} .host-card{max-width:900px;width:min(92%,900px);background:#0e1521;border:1px solid #1d2938;border-radius:14px;box-shadow:0 20px 80px rgba(0,0,0,.45);padding:1rem 1.25rem} .host-card h1{margin:.2rem 0 .6rem;font-size:1.2rem;color:#e7ecf3} .host-card p{color:#a3b1c6;margin:.4rem 0 .8rem} .host-row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap} .host-select{background:#0e1521;border:1px solid #1d2938;border-radius:10px;color:#e7ecf3;padding:.45rem .6rem;font:inherit} .host-btn{background:#7df0a6;color:#05311b;border:0;border-radius:12px;padding:.55rem .9rem;font-weight:800;cursor:pointer} .host-hidden{display:none!important}';
+  const css = '.host-body{margin:0;background:#f6f8fb;color:#111827;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;overflow:hidden}#ml-toolbar{position:fixed;top:0;left:0;right:0;z-index:2147483647}.host-main{position:fixed;left:0;right:0;bottom:0;top:0}#ml-frame-wrap{position:absolute;left:0;right:0;bottom:0;top:0;background:transparent}#ml-frame{border:0;display:block;width:100%;height:100%}.host-welcome{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center;padding:1rem} .host-card{max-width:900px;width:min(92%,900px);background:#ffffff;border:1px solid #d7dfeb;border-radius:14px;box-shadow:0 18px 60px rgba(17,24,39,.12);padding:1rem 1.25rem} .host-card h1{margin:.2rem 0 .6rem;font-size:1.2rem;color:#111827} .host-card p{color:#5b667a;margin:.4rem 0 .8rem} .host-row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap} .host-select{background:#ffffff;border:1px solid #d7dfeb;border-radius:10px;color:#111827;padding:.45rem .6rem;font:inherit} .host-btn{background:#2563eb;color:#ffffff;border:0;border-radius:12px;padding:.55rem .9rem;font-weight:800;cursor:pointer} .host-btn:hover{background:#1d4ed8} .host-hidden{display:none!important}';
     const head = '<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
-      + '<title>MapLogger – Host</title>'
+      + '<title>MapLogger – Study</title>'
       + '<link rel="stylesheet" href="'+cssHref+'">'
       + '<style>'+css+'</style>'
   + '<script>window.MAPLOGGER_TASKS='+tasksJson+'; window.MAPLOGGER_CONFIG={ role:"host", deferStart:true, csvFilename:"'+(csvBaseName? csvBaseName+".csv" : "maplogger_log.csv")+'", sessionKey:"'+(sessionKey||'ml_default')+'", requireIndexStart:false, pages:'+pagesJson+' };</'+'script>'
       + '<script defer src="'+jsSrc+'"></'+'script>';
   // Toolbar starts hidden (will be revealed after user clicks Start)
-  const toolbar = '<div id="ml-toolbar" class="ml-toolbar host-hidden" role="region" aria-label="Experiment task toolbar">\
+  const toolbar = '<div id="ml-toolbar" class="ml-toolbar host-hidden" role="region" aria-label="Study task toolbar">\
 <div class="ml-left"><strong id="ml-task-label">Task 1</strong></div>\
 <div class="ml-right"><button id="ml-next" class="ml-btn ml-accent" aria-label="Next task">Next →</button>\
-<button id="ml-end" class="ml-btn ml-danger ml-hidden" aria-label="End experiment">END</button></div></div>';
+<button id="ml-end" class="ml-btn ml-danger ml-hidden" aria-label="Finish study">Finish</button></div></div>';
     const bodyScript = '(function(){\n' +
       ' try{ if (window.top !== window) window.top.location = window.location.href; }catch(e){}\n' +
       ' var pages = (window.MAPLOGGER_CONFIG && window.MAPLOGGER_CONFIG.pages) || [];\n' +
@@ -398,8 +398,8 @@
       ' window.addEventListener("load", adj); window.addEventListener("resize", adj); setTimeout(adj,50); setTimeout(adj,300);\n' +
       '})();';
     const body = '<body class="host-body">'+toolbar+'<main class="host-main"><div id="ml-welcome" class="host-welcome"><div class="host-card">'
-      + '<h1>Welcome</h1><p>'+ (welcomeMsg ? String(welcomeMsg).replace(/</g,'&lt;') : 'Select a page to begin the study.') +'</p>'
-      + '<div class="host-row"><label for="ml-page">Start page:</label><select id="ml-page" class="host-select"></select><button id="ml-start" class="host-btn">Start</button></div>'
+      + '<h1>Ready to start</h1><p>'+ (welcomeMsg ? String(welcomeMsg).replace(/</g,'&lt;') : 'Choose a page and click Start.') +'</p>'
+      + '<div class="host-row"><label for="ml-page">Page:</label><select id="ml-page" class="host-select"></select><button id="ml-start" class="host-btn">Start</button></div>'
       + '</div></div><div id="ml-frame-wrap" class="host-hidden"><iframe id="ml-frame"></iframe></div></main>'
       + '<script>'+bodyScript+'</'+'script>'
       + '</body>';
@@ -408,8 +408,8 @@
 
   function injectWelcomeBlock(html, message){
     if (!message) return html;
-    const welcome = '<section class="ml-welcome" role="region" aria-label="Welcome"><div class="ml-welcome-inner">'+
-      '<h2>Welcome</h2><p>'+message.replace(/</g,'&lt;')+'</p></div></section>';
+    const welcome = '<section class="ml-welcome" role="region" aria-label="Intro"><div class="ml-welcome-inner">'+
+      '<h2>Before you begin</h2><p>'+message.replace(/</g,'&lt;')+'</p></div></section>';
     if (/<body[^>]*>/i.test(html)) return html.replace(/<body([^>]*)>/i, (m,a)=>'<body'+a+'>'+welcome);
     return welcome + html;
   }
@@ -417,12 +417,12 @@
   function synthesizeIndexPage(htmlNames, sessionKey, tasks, welcomeMsg, csvBaseName){
     const links = htmlNames.map(n => '<li><a href="'+n+'">'+n+'</a></li>').join('\n');
     const tasksJson = JSON.stringify(tasks && tasks.length ? tasks : ["Open a page to begin."]);
-    const welcomeHtml = (welcomeMsg && welcomeMsg.trim()) ? ('<section class="ml-welcome" role="region" aria-label="Welcome"><div class="ml-welcome-inner"><h2>Welcome</h2><p>'+String(welcomeMsg).replace(/</g,'&lt;')+'</p></div></section>') : '';
+    const welcomeHtml = (welcomeMsg && welcomeMsg.trim()) ? ('<section class="ml-welcome" role="region" aria-label="Intro"><div class="ml-welcome-inner"><h2>Before you begin</h2><p>'+String(welcomeMsg).replace(/</g,'&lt;')+'</p></div></section>') : '';
     return '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">\
-<title>MapLogger – Experiment</title><style>.ml-welcome{background:#0e1521;border:1px solid #1d2938;border-radius:12px;margin:1rem auto;padding:1rem;max-width:900px}.ml-welcome-inner h2{margin:.2rem 0 .5rem;font-size:1.1rem;color:#e7ecf3}.ml-welcome-inner p{margin:0;color:#a3b1c6}</style></head>\
+  <title>MapLogger – Study</title><style>body{background:#f6f8fb;color:#111827;font:16px/1.5 system-ui;margin:0}.ml-welcome{background:#ffffff;border:1px solid #d7dfeb;border-radius:12px;margin:1rem auto;padding:1rem;max-width:900px;box-shadow:0 10px 30px rgba(17,24,39,.08)}.ml-welcome-inner h2{margin:.2rem 0 .5rem;font-size:1.1rem;color:#111827}.ml-welcome-inner p{margin:0;color:#5b667a}</style></head>\
 <body>'+welcomeHtml+'\
-<main style="max-width:900px;margin:4rem auto 2rem;padding:0 1rem;font:16px/1.5 system-ui">\
-<h1>Experiment entry</h1><p>Select a page to begin the study.</p><ul>'+links+'</ul></main></body></html>';
+  <main style="max-width:900px;margin:4rem auto 2rem;padding:0 1rem">\
+  <h1>Study entry</h1><p>Choose a page to start.</p><ul>'+links+'</ul></main></body></html>';
   }
 
   // session key is now derived automatically from output name; helper kept minimal
@@ -433,22 +433,22 @@
   buildBtn.addEventListener('click', async ()=>{
     buildLog.textContent = "";
     // Basic validations and confirmations
-  if (!files.length){ log("No ZIP archive loaded."); return; }
+  if (!files.length){ log("No ZIP loaded yet."); return; }
     const hasHtml = files.some(f => isHtml(f.path));
-    if (!hasHtml){ log("No HTML files found. Please add at least one HTML page to inject."); return; }
+    if (!hasHtml){ log("No HTML pages found in the ZIP."); return; }
   const tasks = getTasks();
-    if (!tasks.length){ log("No tasks provided. Please add at least one task."); return; }
+    if (!tasks.length){ log("Please add at least one task."); return; }
     if (tasks.length===1 && tasks[0]===DEFAULT_TASK){
-      const proceed = window.confirm("You are using the default exploratory Task 1 without changes. Do you want to continue?");
+      const proceed = window.confirm("You are still using the default warm-up task. Continue?");
       if (!proceed) return;
     }
     const welcomeEmpty = !(welcomeMessageEl && welcomeMessageEl.value && welcomeMessageEl.value.trim());
     if (welcomeEmpty){
-      const proceed = window.confirm("No Welcome message set. The entry page will start without an introduction. Continue anyway?");
+      const proceed = window.confirm("No welcome message set. The study will start without an intro. Continue anyway?");
       if (!proceed) return;
     }
     const outBase = slugifyName(outputNameEl && outputNameEl.value);
-    if (!outBase){ log("Please provide an output name."); return; }
+    if (!outBase){ log("Please enter an output name."); return; }
     const sessionKey = deriveSessionKey(outBase);
     // Prevent double-clicks during build
     buildBtn.disabled = true;
@@ -461,18 +461,18 @@
       zip.file("LICENSE", LICENSE_TXT);
       zip.file("README.md", README_MD);
     } catch (e){
-      log("Error loading client bundle: " + (e && e.message ? e.message : e));
+      log("Could not load the MapLogger client files. " + (e && e.message ? e.message : e));
       return;
     }
   // First pass: read all HTML texts (for reuse below)
     const htmlSources = new Map();
     for (const f of files){
       if (isHtml(f.path)){
-        try{ const txt = await readFileAsText(f); htmlSources.set(f.path, txt); }catch(e){ log("Error reading "+f.path+": "+e); }
+        try{ const txt = await readFileAsText(f); htmlSources.set(f.path, txt); }catch(e){ log("Could not read "+f.path+": "+e); }
       }
     }
     if (!htmlSources.size){
-      log("No HTML files found in the uploaded ZIP. Please include at least one .html page.");
+      log("No HTML files found in the ZIP. Please include at least one .html page.");
       buildBtn.disabled = false;
       return;
     }
@@ -495,17 +495,17 @@
             const modified = injectChildIntoHtml(txt, sessionKey, outBase, cssHref, jsSrc);
             zip.file(f.path, modified);
             htmlNames.push(f.path);
-            log("Prepared child client in " + f.path);
+            log("Prepared: " + f.path);
           } else {
             zip.file(f.path, txt);
-            log("Added " + f.path);
+            log("Copied: " + f.path);
           }
         } else {
           zip.file(f.path, f.content);
-          log("Added binary " + f.path);
+          log("Copied: " + f.path);
         }
       } catch (e){
-        log("Error processing " + f.path + ": " + (e && e.message ? e.message : e));
+        log("Could not process " + f.path + ": " + (e && e.message ? e.message : e));
       }
     }
     // Create host shell as the entry point (ml-host.html) targeting original index.html if present, else first HTML file
@@ -519,11 +519,11 @@
       const welcomeMsg = (welcomeMessageEl && welcomeMessageEl.value) ? welcomeMessageEl.value.trim() : '';
       const hostHtml = synthesizeHostShell(hostPages, tasks, sessionKey, outBase, welcomeMsg, { cssHref: hostCssHref, jsSrc: hostJsSrc });
       zip.file(hostPath, hostHtml);
-      log("Created host shell "+hostPath+" (open this file to run the study).");
+      log("Created the study entry page: "+hostPath+" (open this file to run the study)." );
     }
     const blob = await zip.generateAsync({type:"blob"});
     saveAs(blob, outBase + ".zip");
-    log("Done. ZIP generated.");
+    log("Done. Your ZIP is ready.");
     buildBtn.disabled = false;
   });
 })();

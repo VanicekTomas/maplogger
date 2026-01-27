@@ -241,7 +241,7 @@
   function showTaskModal(text, onStart){
     const backdrop = document.createElement("div"); backdrop.className = "ml-modal-backdrop";
     const modal = document.createElement("div"); modal.className = "ml-modal";
-    modal.innerHTML = '<h3>Task</h3><p style="white-space:pre-wrap">'+ (text||"Read the instructions and start.") +'</p><div class="ml-actions"><button id="ml-start" class="ml-btn ml-accent">Start task</button></div>';
+    modal.innerHTML = '<h3>Your task</h3><p style="white-space:pre-wrap">'+ (text||"Please read the instructions, then click Start.") +'</p><div class="ml-actions"><button id="ml-start" class="ml-btn ml-accent">Start</button></div>';
     backdrop.appendChild(modal); document.body.appendChild(backdrop);
     modal.querySelector("#ml-start").addEventListener("click", ()=>{ document.body.removeChild(backdrop); if (typeof onStart==="function") onStart(); });
   }
@@ -249,10 +249,10 @@
   function askParticipantId(onSubmit){
     const backdrop = document.createElement("div"); backdrop.className = "ml-modal-backdrop";
     const modal = document.createElement("div"); modal.className = "ml-modal";
-    modal.innerHTML = '<h3>Finish study</h3>'+
-      '<p>Please enter your participant ID to finish and export the log.</p>'+
+    modal.innerHTML = '<h3>Finish</h3>'+
+      '<p>Please enter your participant ID to finish and download the log.</p>'+
       '<div style="margin:.5rem 0"><input id="ml-participant-id" class="ml-input" placeholder="e.g. P01" style="width:100%"/></div>'+
-      '<div class="ml-actions"><button id="ml-cancel" class="ml-btn">Cancel</button><button id="ml-save" class="ml-btn ml-accent">Export CSV</button></div>';
+      '<div class="ml-actions"><button id="ml-cancel" class="ml-btn">Back</button><button id="ml-save" class="ml-btn ml-accent">Download CSV</button></div>';
     backdrop.appendChild(modal); document.body.appendChild(backdrop);
     const input = modal.querySelector('#ml-participant-id'); input.focus();
     const done = (ok)=>{
@@ -270,7 +270,7 @@
   function showThankYou(){
     const backdrop = document.createElement("div"); backdrop.className = "ml-modal-backdrop";
     const modal = document.createElement("div"); modal.className = "ml-modal";
-    modal.innerHTML = '<h3>Thank you!</h3><p>Your responses have been recorded. You can close this window now.</p>'+
+    modal.innerHTML = '<h3>Thank you</h3><p>All done. You can close this window now.</p>'+
       '<div class="ml-actions"><button id="ml-close" class="ml-btn ml-accent">Close</button></div>';
     backdrop.appendChild(modal); document.body.appendChild(backdrop);
     modal.querySelector('#ml-close').addEventListener('click', ()=>{ document.body.removeChild(backdrop); });
@@ -283,10 +283,10 @@
 
     // If session not started, disable controls and hint to start from index
   if (ROLE === 'child'){ return; }
-  if (!session){
-      if (label) label.textContent = "Open index.html to start";
-      if (next){ next.disabled = true; next.title = "Start from index.html"; next.addEventListener("click", ()=> location.href = "./index.html"); }
-      if (end){ end.disabled = true; end.title = "Start from index.html"; end.addEventListener("click", ()=> location.href = "./index.html"); }
+    if (!session){
+      if (label) label.textContent = "Please start from the entry page";
+      if (next){ next.disabled = true; next.title = "Start from the entry page"; next.addEventListener("click", ()=> location.href = "./index.html"); }
+      if (end){ end.disabled = true; end.title = "Start from the entry page"; end.addEventListener("click", ()=> location.href = "./index.html"); }
       ensureOffsetBelowToolbar();
       return;
     }
@@ -304,7 +304,7 @@
         refresh();
         showTaskModal(TASKS[taskIndex], ()=>{ taskStartEpochMs = Date.now(); session.taskRunning = true; session.taskStartEpochMs = taskStartEpochMs; saveSession(session); record(base({event_type:"task_start"})); });
         record(base({event_type:"task_next"}));
-      } else { toast("Last task – press END to export."); }
+      } else { toast("Last task — use Finish to download the log."); }
     });
 
     end && end.addEventListener("click", ()=>{
@@ -424,14 +424,14 @@
     const name = (preferredName && String(preferredName).trim()) || (session && session.participantId) || CSV_FILENAME;
     a.download = name.endsWith('.csv') ? name : (name + '.csv');
     a.href = URL.createObjectURL(blob); a.click();
-    toast("CSV exported");
+    toast("CSV downloaded");
   }
 
   function maybeShowTaskModal(){
     if (!session){
       const backdrop = document.createElement("div"); backdrop.className = "ml-modal-backdrop";
       const modal = document.createElement("div"); modal.className = "ml-modal";
-      modal.innerHTML = '<h3>Experiment not started</h3><p>Please open <strong>index.html</strong> and start the experiment there. Then you can navigate between pages freely.</p><div class="ml-actions"><a class="ml-btn ml-accent" href="./index.html">Go to index</a></div>';
+      modal.innerHTML = '<h3>Not started yet</h3><p>Please open the entry page (<strong>index.html</strong>) and start the study there. Then you can move between pages freely.</p><div class="ml-actions"><a class="ml-btn ml-accent" href="./index.html">Open entry page</a></div>';
       backdrop.appendChild(modal); document.body.appendChild(backdrop);
       return;
     }
