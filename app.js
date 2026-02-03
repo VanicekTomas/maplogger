@@ -183,8 +183,16 @@
     }
   }
 
-  window.addEventListener('dragover', e=>{ e.preventDefault(); });
+  function isBuilderActive(){
+    try{ return !window.MAPLOGGER_ACTIVE_TAB || window.MAPLOGGER_ACTIVE_TAB === 'builder'; }catch(e){ return true; }
+  }
+  window.addEventListener('dragover', e=>{
+    // Only prevent default when the Builder tab is active.
+    if (!isBuilderActive()) return;
+    e.preventDefault();
+  });
   window.addEventListener('drop', async e=>{
+    if (!isBuilderActive()) return;
     if (!e.dataTransfer) return;
     e.preventDefault();
     const candidates = Array.from(e.dataTransfer.files || []);

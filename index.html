@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MapLogger – Builder</title><link rel="icon" type="image/png" href="logo.png"/><link rel="stylesheet" href="style.css"/>
+<title>MapLogger – Suite</title><link rel="icon" type="image/png" href="logo.png"/><link rel="stylesheet" href="style.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -8,7 +8,12 @@
 <body><header class="header"><div class="title-line"><img class="logo" src="logo.png" alt="MapLogger logo" loading="lazy"/><h1>MapLogger <span class="badge">Builder</span></h1></div>
 <p class="subtitle">Turn your interactive map into a ready-to-run usability study. Everything happens in your browser.</p></header>
 <div id="env-warning" class="warn hidden" role="alert"></div>
-<main class="container">
+<nav class="tabs" aria-label="MapLogger tools">
+	<button id="tab-btn-builder" class="tab active" type="button" aria-controls="tab-panel-builder" aria-selected="true">Builder</button>
+	<button id="tab-btn-analyser" class="tab" type="button" aria-controls="tab-panel-analyser" aria-selected="false">Analyser</button>
+</nav>
+
+<main id="tab-panel-builder" class="container" role="tabpanel" aria-label="Builder">
 <section class="panel"><h2>1) Add your map files</h2>
 <p class="help">Upload one ZIP that contains your map (HTML, JavaScript, CSS, images, data, fonts). We keep the folder structure and prepare every HTML page for logging. Anything that already loads from the web (e.g., map tiles) can stay as it is.</p>
 <div id="dropzone" class="dropzone" tabindex="0"><p>Drop your ZIP here, or</p>
@@ -43,5 +48,346 @@
 <p class="help">We’ll generate a ZIP with your pages plus a ready-to-run entry page and CSV logging.</p><button id="build" class="primary build-cta" aria-label="Build instrumented ZIP">Create ZIP</button>
 <p class="build-note">This can take a moment — please click once and wait for the download.</p>
 <div id="build-log" class="log" aria-live="polite"></div></section></main>
-<footer class="footer"><p>MIT licence. Developed by Tomáš Vaníček (Palacký University Olomouc). <a href="https://github.com/VanicekTomas/maplogger-builder" target="_blank" rel="noopener noreferrer">Source code</a>. Fully client‑side; no server required.</p></footer>
-<script src="app.js"></script></body></html>
+
+<main id="tab-panel-analyser" class="container hidden" role="tabpanel" aria-label="Analyser">
+	<section class="panel">
+		<h2>1) Add your CSV logs</h2>
+		<p class="help">Upload one CSV per participant (e.g., <strong>P01.csv</strong>). You can add any number of files. All analysis runs locally in your browser — no data is uploaded.</p>
+		<div class="row wrap gap">
+			<label class="button">
+				<input id="csv-input" type="file" accept=".csv,text/csv" multiple style="display:none"/>
+				Choose CSV files
+			</label>
+			<button id="csv-clear" type="button" class="tiny-btn" aria-label="Clear uploaded CSV files">Remove files</button>
+			<button id="csv-load-sample" type="button" class="tiny-btn" aria-label="Load sample data">Load sample data</button>
+		</div>
+		<div id="csv-dropzone" class="dropzone" tabindex="0" style="margin-top:.75rem">
+			<p>Drop CSV files here</p>
+		</div>
+		<div class="list-head" style="margin-top:.9rem">
+			<div class="left"><strong>Participants (<span id="csv-count">0</span>)</strong> · <span id="csv-total-size">0 B</span></div>
+			<div class="right"><button id="csv-export" type="button" class="tiny-btn" aria-label="Download summary CSV">Download summary</button></div>
+		</div>
+		<div id="csv-list" class="file-list"></div>
+		<div id="csv-warnings" class="warn hidden" role="alert" style="margin-top:.85rem"></div>
+	</section>
+
+	<section class="panel">
+		<h2>2) Filters and time settings</h2>
+		<div class="row wrap gap">
+			<label class="inline">Time bin:
+				<select id="bin-size" class="text-input">
+					<option value="5">5 s</option>
+					<option value="10" selected>10 s</option>
+					<option value="30">30 s</option>
+					<option value="60">60 s</option>
+				</select>
+			</label>
+			<label class="inline">Timeline aggregation:
+				<select id="timeline-agg" class="text-input">
+					<option value="sum" selected>Sum</option>
+					<option value="mean">Mean per participant</option>
+				</select>
+			</label>
+			<label class="inline">PNG export:
+				<select id="export-scale" class="text-input">
+					<option value="screen" selected>On-screen</option>
+					<option value="print">300 DPI (print)</option>
+				</select>
+			</label>
+			<label class="inline">Participant view:
+				<select id="participant-select" class="text-input">
+					<option value="__aggregate__" selected>Aggregate</option>
+				</select>
+			</label>
+		</div>
+		<p class="help">By default, the timeline counts interaction events only (click, wheel, keydown, dblclick, context menu). You can tweak this below.</p>
+		<div class="row wrap gap" aria-label="Event filters">
+			<label class="inline chk"><input class="evt-filter" type="checkbox" value="click" checked/> Click</label>
+			<label class="inline chk"><input class="evt-filter" type="checkbox" value="wheel" checked/> Wheel</label>
+			<label class="inline chk"><input class="evt-filter" type="checkbox" value="keydown" checked/> Keydown</label>
+			<label class="inline chk"><input class="evt-filter" type="checkbox" value="dblclick" checked/> Double‑click</label>
+			<label class="inline chk"><input class="evt-filter" type="checkbox" value="contextmenu" checked/> Context menu</label>
+			<label class="inline chk"><input id="include-meta" type="checkbox"/> Include meta events (session/page, focus/blur, resize)</label>
+		</div>
+	</section>
+
+	<section class="panel">
+		<h2>3) Overview</h2>
+		<div id="summary" class="summary-grid" aria-label="Summary"></div>
+	</section>
+
+	<section class="panel">
+		<h2>4) Charts</h2>
+		<div class="charts-grid">
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Event types</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="eventTypes" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-event-types" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-event-types" height="180"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Total interactions per participant</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="perParticipant" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-per-participant" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-per-participant" height="180"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Interactions over time</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="timeline" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-timeline" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-timeline" height="220"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Per-task interactions and duration</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="tasks" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-tasks" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-tasks" height="220"></canvas>
+			</div>
+
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Task-specific interaction profiles (proportional)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="taskProfiles" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-task-profiles" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-task-profiles" height="240"></canvas>
+				<div class="help" style="margin:.45rem 0 0">Interaction counts are normalised within each task. Each bar sums to 100% and shows the relative composition of interaction types.</div>
+			</div>
+
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Per-task interaction type shares (boxplots)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="taskShares" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-task-shares" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-task-shares" height="240"></canvas>
+				<div id="chart-task-shares-fallback" class="warn hidden" role="alert" style="margin:.55rem 0 0; white-space: pre-line"></div>
+				<div class="help" style="margin:.45rem 0 0">Each boxplot summarises how participants split their actions within a task (e.g., more wheel vs click). Values are shares (0–100%).</div>
+			</div>
+
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Ternary interaction strategy (per task)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="ternary" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="canvas" data-export="ternary-canvas" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<div class="row wrap gap" style="margin:.35rem 0 .5rem">
+					<label class="inline">Task:
+						<select id="ternary-task" class="text-input"></select>
+					</label>
+					<label class="inline">A:
+						<select id="ternary-a" class="text-input">
+							<option value="click" selected>Click</option>
+							<option value="wheel">Wheel</option>
+							<option value="keydown">Keydown</option>
+							<option value="dblclick">Double‑click</option>
+							<option value="contextmenu">Context menu</option>
+						</select>
+					</label>
+					<label class="inline">B:
+						<select id="ternary-b" class="text-input">
+							<option value="click">Click</option>
+							<option value="wheel" selected>Wheel</option>
+							<option value="keydown">Keydown</option>
+							<option value="dblclick">Double‑click</option>
+							<option value="contextmenu">Context menu</option>
+						</select>
+					</label>
+					<label class="inline">C:
+						<select id="ternary-c" class="text-input">
+							<option value="click">Click</option>
+							<option value="wheel">Wheel</option>
+							<option value="keydown" selected>Keydown</option>
+							<option value="dblclick">Double‑click</option>
+							<option value="contextmenu">Context menu</option>
+						</select>
+					</label>
+				</div>
+				<canvas id="ternary-canvas" height="320"></canvas>
+				<div id="ternary-fallback" class="warn hidden" role="alert" style="margin:.55rem 0 0; white-space: pre-line"></div>
+				<div class="help" style="margin:.45rem 0 0">Each point is one participant’s interaction mix for the selected task, projected into a ternary diagram using the three selected interaction types.</div>
+			</div>
+
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Element tag (top)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="elementTag" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-element-tag" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-element-tag" height="180"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Element id (top)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="elementId" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-element-id" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-element-id" height="180"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Element text (top)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="elementText" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-element-text" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-element-text" height="200"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Mouse button</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="mouseButton" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-mouse-button" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-mouse-button" height="180"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Wheel zoom direction</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="zoomDirection" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-zoom-direction" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-zoom-direction" height="180"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Key (top)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="key" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-key" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-key" height="180"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Code (top)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="code" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-code" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-code" height="180"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Modifier keys (Ctrl / Alt / Shift)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="modifiers" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-modifiers" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-modifiers" height="200"></canvas>
+			</div>
+
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Event timeline (participant)</div>
+					<div class="chart-actions">
+						<button class="icon-btn info-btn" type="button" data-help="eventTimeline" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn download-btn" type="button" data-export-kind="chart" data-export="chart-event-timeline" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="chart-event-timeline" height="240"></canvas>
+				<div class="help" style="margin:.45rem 0 0">This view is only available for a single participant (use the Participant view selector above).</div>
+			</div>
+		</div>
+		<div id="tables" style="margin-top:1rem"></div>
+	</section>
+
+	<section class="panel">
+		<h2>5) Heatmap</h2>
+		<p class="help">Aggregates pointer interaction coordinates (<strong>x</strong>, <strong>y</strong>) within a given viewport size and overlays them on an optional background image (e.g., a screenshot of the tested interface).</p>
+		<div class="row wrap gap">
+			<label class="inline">Viewport group:
+				<select id="heatmap-viewport" class="text-input"></select>
+			</label>
+			<label class="inline">Overlay opacity:
+				<input id="heatmap-opacity" type="range" min="0" max="1" step="0.05" value="0.85"/>
+			</label>
+			<label class="inline">Background image:
+				<input id="heatmap-bg" type="file" accept="image/*" class="text-input"/>
+			</label>
+			<button class="icon-btn info-btn" type="button" data-help="heatmap" aria-label="What does this visualisation show?" title="Info">i</button>
+			<button id="heatmap-clear-bg" type="button" class="tiny-btn">Remove background</button>
+			<button class="tiny-btn download-btn" type="button" data-export-kind="canvas" data-export="heatmap-canvas">Download heatmap PNG</button>
+		</div>
+		<div class="heatmap-wrap" aria-label="Heatmap">
+			<canvas id="heatmap-canvas"></canvas>
+		</div>
+		<div class="help" id="heatmap-note" style="margin-top:.5rem"></div>
+	</section>
+
+	<section class="panel">
+		<h2>6) Interpretation</h2>
+		<p class="help">Here is a simple interpretation (summary) of the previous data. Suitable for direct copying.</p>
+		<div class="row wrap gap" style="margin-bottom:.5rem">
+			<button id="interpretation-copy" type="button" class="tiny-btn">Copy</button>
+			<button id="interpretation-download" type="button" class="tiny-btn">Download TXT</button>
+			<button class="icon-btn info-btn" type="button" data-help="interpretation" aria-label="What is this?" title="Info">i</button>
+		</div>
+		<textarea id="interpretation-text" class="welcome-input" style="min-height:180px" readonly></textarea>
+	</section>
+</main>
+
+<div id="info-modal" class="ml-modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Chart help">
+	<div class="ml-modal" style="max-width:720px">
+		<div class="chart-head" style="margin-bottom:.35rem">
+			<div id="info-modal-title" class="chart-title" style="margin:0">Info</div>
+			<div class="chart-actions"><button id="info-modal-close" class="tiny-btn" type="button">Close</button></div>
+		</div>
+		<div id="info-modal-body" class="help" style="color:var(--fg);margin:.25rem 0 0"></div>
+	</div>
+</div>
+
+<footer class="footer">
+	<p>
+		Version <strong>1.0.1</strong> (February 02, 2026). MIT licence.<br/>
+		Developed by Tomáš Vaníček.
+		<a href="https://www.geoinformatics.upol.cz/en/" target="_blank" rel="noopener noreferrer">Department of Geoinformatics</a>, Palacký University Olomouc.<br/>
+		<a href="https://github.com/VanicekTomas/maplogger-builder" target="_blank" rel="noopener noreferrer">Source code</a>. Fully client‑side; no server required.
+	</p>
+	<p style="margin:.65rem 0 0">
+		<a href="https://www.upol.cz/en/" target="_blank" rel="noopener noreferrer" aria-label="Palacký University Olomouc">
+			<img src="upol.png" alt="Palacký University Olomouc" style="height:56px;width:auto;opacity:.95" loading="lazy"/>
+		</a>
+	</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.5/build/index.umd.min.js"></script>
+<script src="suite.js"></script>
+<script src="app.js"></script>
+<script src="analyser.js"></script></body></html>

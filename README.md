@@ -1,19 +1,28 @@
-# MapLogger – Builder
+# MapLogger – Suite (Builder + Analyser)
 
-MapLogger Builder is a small, fully in‑browser tool that turns your existing map pages into a ready‑to‑run usability study. You upload a ZIP, write a few tasks, and download a new ZIP you can open or host straight away.
+Version **1.0.1** (February 02, 2026)
+
+MapLogger Suite is a small, fully in‑browser toolkit:
+
+- **Builder** turns your existing map pages into a ready‑to‑run usability study.
+- **Analyser** loads the resulting CSV logs (one CSV per participant) and produces summary statistics and charts.
+
+Everything runs locally in your browser.
 
 ## What’s in this folder
 
 - `index.html` – the Builder interface
 - `app.js` – the Builder logic (reads ZIP, prepares pages, creates the download)
 - `style.css` – Builder styling
+- `suite.js` – tab switching (Builder / Analyser)
+- `analyser.js` – CSV parsing + statistics + charts
 - `client/`
   - `maplogger-client.js` – logging + task flow used in the study
   - `maplogger.css` – styles for the study toolbar/modals
 
 ## Quick start
 
-1) Open `builder/index.html` in your browser.
+1) Open `index.html` in this folder in your browser (e.g., `MapLogger/index.html`).
 2) Add your project as a single ZIP (it should include at least one `.html` file and any assets your pages use).
 3) Add tasks (one per bubble). You can drag to reorder.
 4) Optional: add a short welcome message (shown once at the very start).
@@ -23,6 +32,44 @@ MapLogger Builder is a small, fully in‑browser tool that turns your existing m
    - Otherwise, the study entry page is `index.html`.
 
 Everything is generated locally in your browser. No server is needed for building, but some browsers block `fetch()` from `file://` (see Troubleshooting).
+
+## Using the Analyser
+
+1) Open the **Analyser** tab.
+2) Upload one or more participant CSV files (e.g., `P01.csv`, `P02.csv`, …).
+3) Review the overview cards and charts:
+  - event type breakdown
+  - interactions per participant
+  - interactions over time (binned)
+  - per-task interactions and duration (when task end durations are available)
+  - interaction attributes (element tag/id/text, mouse button, wheel zoom direction, key/code, modifier keys)
+  - participant event timeline (chronological “what happened when”) for a single selected participant
+4) Optional: use the **Heatmap** section to visualise where participants interacted most (x/y + viewport size) and overlay a background image.
+5) Optional: click **Download summary** to export a compact CSV of participant-level metrics.
+
+### Heatmap (x/y + viewport)
+
+If your CSV logs contain `x`, `y`, `viewport_w`, `viewport_h`, the analyser can render a heatmap of interaction hotspots.
+
+- You can switch between viewport groups if participants used different window sizes.
+- You can upload a background image (e.g., a screenshot of the tested UI) and the heatmap will be rendered on top.
+
+### “i” helper + export
+
+- Each chart has an **info** button (“i”) describing what the visualisation represents and what to look for (British English).
+- Each chart and the heatmap can be exported as a **PNG** (rendered at “300 DPI” via high-resolution export) with a **20 px** margin around the visual.
+
+### Interpretation (copy-ready)
+
+The analyser generates a short interpretation text that updates based on:
+
+- the current participant selection (aggregate vs single participant)
+- event filters (click/wheel/keydown etc.) and meta-event inclusion
+- current time bin size
+
+It is designed to be pasted into an academic report (always review wording and align with your study design).
+
+Tip: the **Load sample data** button works when served via `http://localhost/...` (some browsers block `fetch()` from `file://`).
 
 ## What the Builder generates
 
@@ -77,7 +124,7 @@ The ZIP contains:
 
 - **“Could not load the MapLogger client files …”** when opening the Builder from the file system:
   - Some browsers block `fetch('client/...')` on `file://` URLs.
-  - Fix: run the Builder through a local static server (e.g. VS Code “Live Server”) and open it via `http://localhost:.../builder/index.html`.
+  - Fix: run the Suite through a local static server (e.g. VS Code “Live Server”) and open it via `http://localhost:.../MapLogger/index.html`.
 
 - **Toolbar not visible in the unzipped study**:
   - Make sure you opened the study entry page (`ml-host.html` or `index.html`), not one of the injected pages.
