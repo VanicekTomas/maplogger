@@ -9,8 +9,9 @@
 <p class="subtitle">Turn your interactive map into a ready-to-run usability study. Everything happens in your browser.</p></header>
 <div id="env-warning" class="warn hidden" role="alert"></div>
 <nav class="tabs" aria-label="MapLogger tools">
-	<button id="tab-btn-builder" class="tab active" type="button" aria-controls="tab-panel-builder" aria-selected="true">Builder</button>
-	<button id="tab-btn-analyser" class="tab" type="button" aria-controls="tab-panel-analyser" aria-selected="false">Analyser</button>
+	<button id="tab-btn-builder" class="tab tab-core active" type="button" aria-controls="tab-panel-builder" aria-selected="true">Builder</button>
+	<button id="tab-btn-analyser" class="tab tab-core" type="button" aria-controls="tab-panel-analyser" aria-selected="false">Analyser</button>
+	<button id="tab-btn-cartologger" class="tab tab-addon" type="button" aria-controls="tab-panel-cartologger" aria-selected="false">CartoLogger</button>
 </nav>
 
 <main id="tab-panel-builder" class="container" role="tabpanel" aria-label="Builder">
@@ -362,6 +363,154 @@
 	</section>
 </main>
 
+<main id="tab-panel-cartologger" class="container hidden" role="tabpanel" aria-label="CartoLogger Analyser">
+	<section class="panel">
+		<h2>CartoLogger Extension</h2>
+		<p class="help">This tab extends the original MapLogger idea with support for CartoLogger CSV exports. CartoLogger is a Chrome extension that records map interactions (clicks, pans, zooms, and URL modifications) and exports logs for behavioural analysis.</p>
+		<p class="help">The analysis here focuses on URL-based interaction traces, especially <strong>url_change</strong> events, and explains what changed between consecutive URLs (zoom, map layer, coordinates, and related parameters).</p>
+		<p class="help">Tool source: <a href="https://github.com/misavojte/CartoLogger" target="_blank" rel="noopener noreferrer">CartoLogger GitHub repository</a>. Example study use: <a href="https://iccgis2024.cartography-gis.com/papers/9ICCGIS-Proceedings_Paper%20(27).pdf" target="_blank" rel="noopener noreferrer">ICCGIS 2024 paper (PDF)</a>.</p>
+	</section>
+
+	<section class="panel">
+		<h2>1) Add CartoLogger CSV files</h2>
+		<p class="help">Upload one CSV per participant (e.g., <strong>U01.csv</strong>). Required columns: <strong>absoluteTime</strong>, <strong>session</strong>, <strong>task</strong>, <strong>time</strong>, <strong>type</strong>, <strong>val</strong>.</p>
+		<div class="row wrap gap">
+			<label class="button">
+				<input id="carto-csv-input" type="file" accept=".csv,text/csv" multiple style="display:none"/>
+				Choose CartoLogger CSV files
+			</label>
+			<button id="carto-csv-clear" type="button" class="tiny-btn" aria-label="Clear uploaded CartoLogger files">Remove files</button>
+			<button id="carto-load-sample" type="button" class="tiny-btn" aria-label="Load CartoLogger sample data">Load CartoLogger sample data</button>
+		</div>
+		<div id="carto-dropzone" class="dropzone" tabindex="0" style="margin-top:.75rem">
+			<p>Drop CartoLogger CSV files here</p>
+		</div>
+		<div class="list-head" style="margin-top:.9rem">
+			<div class="left"><strong>Participants (<span id="carto-count">0</span>)</strong> · <span id="carto-total-size">0 B</span></div>
+		</div>
+		<div id="carto-list" class="file-list"></div>
+		<div id="carto-warnings" class="warn hidden" role="alert" style="margin-top:.85rem"></div>
+	</section>
+
+	<section class="panel">
+		<h2>2) CartoLogger URL change analysis</h2>
+		<div class="row wrap gap">
+			<label class="inline">Participant view:
+				<select id="carto-participant-select" class="text-input">
+					<option value="__aggregate__" selected>Aggregate</option>
+				</select>
+			</label>
+			<label class="inline">Time bin:
+				<select id="carto-bin-size" class="text-input">
+					<option value="5">5 s</option>
+					<option value="10" selected>10 s</option>
+					<option value="30">30 s</option>
+					<option value="60">60 s</option>
+				</select>
+			</label>
+			<label class="inline">Task range from:
+				<input id="carto-task-min" type="number" class="text-input" style="width:7rem" placeholder="e.g., 0"/>
+			</label>
+			<label class="inline">Task range to:
+				<input id="carto-task-max" type="number" class="text-input" style="width:7rem" placeholder="e.g., 8"/>
+			</label>
+			<button id="carto-task-reset" type="button" class="tiny-btn">Use all tasks</button>
+			<label class="inline">Grouping mode:
+				<select id="carto-bundle-mode" class="text-input">
+					<option value="off" selected>Off (use task IDs)</option>
+					<option value="auto">Auto bundles (experimental)</option>
+					<option value="manual">Manual bundles (CSV)</option>
+				</select>
+			</label>
+			<label class="button" style="margin-top:0">
+				<input id="carto-bundle-file" type="file" accept=".csv,text/csv" style="display:none"/>
+				Load bundle mapping CSV
+			</label>
+			<button class="icon-btn carto-info-btn" type="button" data-help="cartoBundleMapping" aria-label="How should bundle mapping CSV look?" title="Bundle mapping CSV help">i</button>
+			<button id="carto-bundle-clear" type="button" class="tiny-btn">Clear mapping</button>
+		</div>
+		<p class="help" style="margin-top:.25rem">Task filter is inclusive. Leave both fields empty to include all tasks.</p>
+		<div id="carto-bundle-status" class="help" style="margin-top:.15rem"></div>
+		<div id="carto-summary" class="summary-grid" aria-label="CartoLogger summary" style="margin-top:.75rem"></div>
+		<div style="margin-top:.9rem">
+			<div class="chart-head" style="margin-bottom:.35rem">
+				<div class="chart-title">Data quality and task recommendation</div>
+				<div class="chart-actions">
+					<button id="carto-apply-suggested-range" type="button" class="tiny-btn">Apply suggested range</button>
+				</div>
+			</div>
+			<div id="carto-quality" class="help" style="margin:0;white-space:pre-line"></div>
+		</div>
+	</section>
+
+	<section class="panel">
+		<h2>3) Visualisations</h2>
+		<div id="carto-task-randomization-warning" class="warn" role="alert" style="margin:0 0 .8rem">
+			Task-based charts can be misleading if tasks were randomised across participants. In that case, the same task ID may represent different actual assignments, and comparisons by task ID should be interpreted with caution.
+		</div>
+		<div class="charts-grid">
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">Event types (CartoLogger)</div>
+					<div class="chart-actions">
+						<button class="icon-btn carto-info-btn" type="button" data-help="cartoEventTypes" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn carto-download-btn" type="button" data-export="carto-chart-event-types" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="carto-chart-event-types" height="190"></canvas>
+			</div>
+			<div class="chart-card">
+				<div class="chart-head">
+					<div class="chart-title">URL change categories</div>
+					<div class="chart-actions">
+						<button class="icon-btn carto-info-btn" type="button" data-help="cartoUrlCategories" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn carto-download-btn" type="button" data-export="carto-chart-url-categories" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="carto-chart-url-categories" height="190"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">URL changes over time</div>
+					<div class="chart-actions">
+						<button class="icon-btn carto-info-btn" type="button" data-help="cartoTimeline" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn carto-download-btn" type="button" data-export="carto-chart-timeline" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="carto-chart-timeline" height="220"></canvas>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Per-task interactions, zoom, and duration</div>
+					<div class="chart-actions">
+						<button class="icon-btn carto-info-btn" type="button" data-help="cartoTaskSummary" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn carto-download-btn" type="button" data-export="carto-chart-task-summary" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="carto-chart-task-summary" height="230"></canvas>
+				<div class="help" style="margin:.45rem 0 0">Bars show total interactions and URL transitions with zoom changes; the line shows mean task duration (seconds).</div>
+			</div>
+			<div class="chart-card wide">
+				<div class="chart-head">
+					<div class="chart-title">Map usage duration by task (URL id=...)</div>
+					<div class="chart-actions">
+						<button class="icon-btn carto-info-btn" type="button" data-help="cartoTaskMaps" aria-label="What does this chart show?" title="Info">i</button>
+						<button class="icon-btn carto-download-btn" type="button" data-export="carto-chart-task-maps" aria-label="Download PNG" title="Download PNG">PNG</button>
+					</div>
+				</div>
+				<canvas id="carto-chart-task-maps" height="250"></canvas>
+				<div class="help" style="margin:.45rem 0 0">Stacked bars estimate how long each map ID was active within each task, derived from consecutive <strong>url_change</strong> timestamps.</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="panel">
+		<h2>4) URL transition details</h2>
+		<p class="help">Each row compares one <strong>url_change</strong> event to the previous one from the same participant and task. The <strong>Change summary</strong> column explains what changed in <strong>val</strong> (URL).</p>
+		<div id="carto-transitions"></div>
+	</section>
+</main>
+
 <div id="info-modal" class="ml-modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Chart help">
 	<div class="ml-modal" style="max-width:720px">
 		<div class="chart-head" style="margin-bottom:.35rem">
@@ -374,7 +523,7 @@
 
 <footer class="footer">
 	<p>
-		Version <strong>1.0.1</strong> (February 02, 2026). MIT licence.<br/>
+		Version <strong>1.0.2</strong> (March 18, 2026). MIT licence.<br/>
 		Developed by Tomáš Vaníček.
 		<a href="https://www.geoinformatics.upol.cz/en/" target="_blank" rel="noopener noreferrer">Department of Geoinformatics</a>, Palacký University Olomouc.<br/>
 		<a href="https://github.com/VanicekTomas/maplogger-builder" target="_blank" rel="noopener noreferrer">Source code</a>. Fully client‑side; no server required.
@@ -390,4 +539,5 @@
 <script src="https://cdn.jsdelivr.net/npm/@sgratzl/chartjs-chart-boxplot@4.4.5/build/index.umd.min.js"></script>
 <script src="suite.js"></script>
 <script src="app.js"></script>
-<script src="analyser.js"></script></body></html>
+<script src="analyser.js"></script>
+<script src="cartologger.js"></script></body></html>

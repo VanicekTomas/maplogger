@@ -1,11 +1,12 @@
 # MapLogger – Suite (Builder + Analyser)
 
-Version **1.0.1** (February 02, 2026)
+Version **1.0.2** (March 18, 2026)
 
 MapLogger Suite is a small, fully in‑browser toolkit:
 
 - **Builder** turns your existing map pages into a ready‑to‑run usability study.
 - **Analyser** loads the resulting CSV logs (one CSV per participant) and produces summary statistics and charts.
+- **CartoLogger Extension** analyses CSV exports from the CartoLogger tool, with a focus on `url_change` events and URL transition interpretation.
 
 Everything runs locally in your browser.
 
@@ -16,6 +17,7 @@ Everything runs locally in your browser.
 - `style.css` – Builder styling
 - `suite.js` – tab switching (Builder / Analyser)
 - `analyser.js` – CSV parsing + statistics + charts
+- `cartologger.js` – CartoLogger CSV parsing + URL transition analysis + charts
 - `client/`
   - `maplogger-client.js` – logging + task flow used in the study
   - `maplogger.css` – styles for the study toolbar/modals
@@ -70,6 +72,21 @@ The analyser generates a short interpretation text that updates based on:
 It is designed to be pasted into an academic report (always review wording and align with your study design).
 
 Tip: the **Load sample data** button works when served via `http://localhost/...` (some browsers block `fetch()` from `file://`).
+
+## Using the CartoLogger Extension
+
+1) Open the **CartoLogger** tab.
+2) Upload one or more CartoLogger CSV files (e.g., `U01.csv`, `U02.csv`, …), or use **Load CartoLogger sample data**.
+3) Review URL-focused outputs:
+  - event type distribution for CartoLogger logs
+  - URL change categories (zoom / center / map ID / projection / other params)
+  - URL changes over time
+  - per-task interaction, zoom, and duration summary
+  - map usage duration by task (derived from `id=...` in URL)
+  - detailed URL transition table (with clickable URLs opening in a new window)
+4) Optional: use task range filtering (e.g., task `0` to `8`) if your data contains invalid extra task IDs.
+
+Source tool: https://github.com/misavojte/CartoLogger
 
 ## What the Builder generates
 
