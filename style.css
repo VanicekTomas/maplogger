@@ -134,6 +134,14 @@ body{margin:0;font-family:'Noto Sans',system-ui,-apple-system,"Segoe UI",Roboto,
 .url-link-plain{color:inherit;text-decoration:none;cursor:pointer}
 .url-link-plain:hover,.url-link-plain:focus{text-decoration:none;color:inherit;opacity:.9;outline:none}
 
+.seq-stream{display:flex;flex-direction:column;gap:.45rem;max-height:24rem;overflow:auto;padding-right:.1rem}
+.seq-item{background:#ffffff;border:1px solid var(--border);border-radius:12px;padding:.55rem .65rem;box-shadow:0 1px 0 rgba(17,24,39,.03)}
+.seq-top{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem}
+.seq-step{display:inline-flex;align-items:center;justify-content:center;min-width:2.4rem;padding:.1rem .45rem;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1e3a8a;font-weight:800;font-size:.83em}
+.seq-type{font-weight:800;color:var(--fg)}
+.seq-time{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums;font-size:.9em}
+.seq-meta{margin-top:.28rem;color:var(--muted);font-size:.9em;word-break:break-word}
+
 @media (max-width: 860px){
 	.summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 	.charts-grid{grid-template-columns:1fr}

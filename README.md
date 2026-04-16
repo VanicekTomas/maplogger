@@ -1,14 +1,17 @@
 # MapLogger – Suite (Builder + Analyser)
 
-Version **1.0.2** (March 18, 2026)
+Version **1.0.3** (April 15, 2026)
 
 MapLogger Suite is a small, fully in‑browser toolkit:
 
 - **Builder** turns your existing map pages into a ready‑to‑run usability study.
 - **Analyser** loads the resulting CSV logs (one CSV per participant) and produces summary statistics and charts.
-- **CartoLogger Extension** analyses CSV exports from the CartoLogger tool, with a focus on `url_change` events and URL transition interpretation.
+- **CartoLogger Extension** analyses CSV exports from the CartoLogger tool using a transformed interaction model (`parameter`, `zoom`, `map`, `click`, `projection`) and sequence reconstruction.
 
 Everything runs locally in your browser.
+
+> **Case-study note (CartoLogger tab):**
+> The current CartoLogger workflow is tailored to one case study (IPAtlas). It can be adapted for other studies/workflows; if you need that, please contact the author via the project repository: https://github.com/VanicekTomas/maplogger-builder
 
 ## What’s in this folder
 
@@ -17,7 +20,7 @@ Everything runs locally in your browser.
 - `style.css` – Builder styling
 - `suite.js` – tab switching (Builder / Analyser)
 - `analyser.js` – CSV parsing + statistics + charts
-- `cartologger.js` – CartoLogger CSV parsing + URL transition analysis + charts
+- `cartologger.js` – CartoLogger CSV parsing + IPAtlas task_ID converter + transformed interaction model + charts
 - `client/`
   - `maplogger-client.js` – logging + task flow used in the study
   - `maplogger.css` – styles for the study toolbar/modals
@@ -77,14 +80,29 @@ Tip: the **Load sample data** button works when served via `http://localhost/...
 
 1) Open the **CartoLogger** tab.
 2) Upload one or more CartoLogger CSV files (e.g., `U01.csv`, `U02.csv`, …), or use **Load CartoLogger sample data**.
-3) Review URL-focused outputs:
+3) Data is automatically converted for IPAtlas randomised tasks:
+  - `session` is normalised to `participant_ID`
+  - a new `task_ID` column is computed from the last `url_change` in each source task
+  - task mapping is based on `id=...` in URL (`povrch-zeme`→1, `podnebne-pasy`/`biomy`→2, …, `objevne-cesty`→8)
+  - unresolved mappings are listed in diagnostics with `participant_ID` and source `task`
+4) Review transformed outputs (task_ID-based):
   - event type distribution for CartoLogger logs
-  - URL change categories (zoom / center / map ID / projection / other params)
-  - URL changes over time
-  - per-task interaction, zoom, and duration summary
-  - map usage duration by task (derived from `id=...` in URL)
-  - detailed URL transition table (with clickable URLs opening in a new window)
-4) Optional: use task range filtering (e.g., task `0` to `8`) if your data contains invalid extra task IDs.
+  - pointer click targets (derived from `pointerdown` selectors, including extended UI-control categories to reduce `other`)
+  - interactions over time
+  - per-task_ID interaction, zoom, and duration summary (mean duration as red points)
+  - map usage duration by task_ID (derived from `id=...` in URL; all map IDs are shown)
+  - map transition matrix (`from map` → `to map`) built from consecutive `url_change` events within task_ID
+  - time to first action by task_ID (mean/median/P75), with configurable first-action definition
+  - interaction sequence reconstruction (chart + chronological stream) for a selected participant
+  - sequence chart supports horizontal pan by left mouse drag and zoom only with mouse wheel
+5) Optional controls:
+  - use task_ID range filtering (e.g., task_ID `0` to `8`)
+  - choose first-action definition for the time-to-first-action chart:
+    - pointerdown only
+    - pointerdown or zoom
+    - pointerdown, zoom, or url_change
+    - any non-projection event
+  - export one merged converted CSV for all loaded participants
 
 Source tool: https://github.com/misavojte/CartoLogger
 
