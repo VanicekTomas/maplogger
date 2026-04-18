@@ -1,0 +1,344 @@
+absoluteTime,session,task,time,type,val,screenX,screenY,clientX,clientY;;;
+1701353540943,U03,0,2,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353540941,U03,0,0,projection,robinson,,,,;;;
+1701353545291,U03,0,4350,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > button.toggle > ,1582.0,582.0,1582.0,495.0;;;
+1701353545444,U03,0,4503,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > button.toggle > ,1582.0,582.0,1582.0,495.0;;;
+1701353546264,U03,0,5323,url_change,https://atlas.mapy.cz/?p=000101&s=0&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353546801,U03,0,5860,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.transition > button.toggle > ,1909.0,602.0,1909.0,515.0;;;
+1701353546932,U03,0,5991,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.transition > button.toggle > ,1909.0,602.0,1909.0,515.0;;;
+1701353547624,U03,0,6683,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353550857,U03,0,9916,mouse_wheel_start,100,,,,;;;
+1701353550965,U03,0,10024,mouse_wheel_end,100,,,,;;;
+1701353551284,U03,0,10343,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.4&x=-20.705&y=0.356&m=m,,,,;;;
+1701353551396,U03,0,10455,mouse_wheel_start,-100,,,,;;;
+1701353551450,U03,0,10509,mouse_wheel_end,-100,,,,;;;
+1701353551765,U03,0,10824,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.8&x=13.066&y=-0.225&m=m,,,,;;;
+1701353553595,U03,0,12654,mouse_wheel_start,-100,,,,;;;
+1701353553938,U03,0,12997,mouse_wheel_end,-100,,,,;;;
+1701353554254,U03,0,13313,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.6&x=-9.047&y=28.699&m=m,,,,;;;
+"1701353554461,U03,0,13520,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",591.0,197.0,591.0,110.0"
+"1701353555000,U03,0,14059,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",670.0,440.0,670.0,353.0"
+1701353555249,U03,0,14308,mouse_wheel_start,-100,,,,;;;
+1701353555349,U03,0,14408,mouse_wheel_end,-100,,,,;;;
+1701353555664,U03,0,14723,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.2&x=-29.176&y=59.008&m=m,,,,;;;
+"1701353555774,U03,0,14833,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",647.0,393.0,647.0,306.0"
+"1701353556184,U03,0,15243,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",664.0,464.0,664.0,377.0"
+1701353556464,U03,0,15523,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.2&x=-32.334&y=64.159&m=m,,,,;;;
+1701353556532,U03,0,15591,mouse_wheel_start,-100,,,,;;;
+1701353556532,U03,0,15591,mouse_wheel_end,-100,,,,;;;
+1701353556843,U03,0,15902,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.4&x=-34.384&y=65.115&m=m,,,,;;;
+"1701353559817,U03,0,18876,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#tools.no-mobile > button[title='Zobrazit na mapě města, názvy a hranice států, řeky…'][data-dot='properties'] > span > "",207.0,1009.0,207.0,922.0";;;
+"1701353559964,U03,0,19023,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#tools.no-mobile > button.active[title='Zobrazit na mapě města, názvy a hranice států, řeky…'][data-dot='properties'] > span > "",207.0,1009.0,207.0,922.0";;;
+"1701353560791,U03,0,19850,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#tools.no-mobile > button.active[title='Zobrazit na mapě města, názvy a hranice států, řeky…'][data-dot='properties'] > span > "",207.0,1009.0,207.0,922.0";;;
+"1701353560922,U03,0,19981,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#tools.no-mobile > button[title='Zobrazit na mapě města, názvy a hranice států, řeky…'][data-dot='properties'] > span > "",207.0,1009.0,207.0,922.0";;;
+1701353564880,U03,0,23939,mouse_wheel_start,-100,,,,;;;
+1701353564880,U03,0,23939,mouse_wheel_end,-100,,,,;;;
+1701353565194,U03,0,24253,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.6&x=-34.800&y=65.077&m=m,,,,;;;
+"1701353565469,U03,0,24528,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",762.0,569.0,762.0,482.0"
+"1701353566264,U03,0,25323,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",811.0,665.0,811.0,578.0"
+1701353566394,U03,0,25453,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.6&x=-40.931&y=70.666&m=m,,,,;;;
+1701353571877,U03,0,30936,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1595.0,127.0,1595.0,40.0;;;
+1701353572031,U03,0,31090,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1595.0,127.0,1595.0,40.0;;;
+"1701353579213,U03,0,38272,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='cervencove-teploty-vzduchu'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A3_cervencove-teploty.jpg')";"'] > "",434.0,627.0,434.0,540.0";;
+"1701353579350,U03,0,38409,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='cervencove-teploty-vzduchu'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A3_cervencove-teploty.jpg')";"'] > "",434.0,627.0,434.0,540.0";;
+1701353580575,U03,0,39634,url_change,https://atlas.mapy.cz/?p=010011&id=cervencove-teploty-vzduchu&n=m&z=4.6&x=-40.931&y=70.666&m=m,,,,;;;
+1701353582297,U03,0,41356,mouse_wheel_start,-100,,,,;;;
+1701353582297,U03,0,41356,mouse_wheel_end,-100,,,,;;;
+1701353582614,U03,0,41673,url_change,https://atlas.mapy.cz/?p=010011&id=cervencove-teploty-vzduchu&n=m&z=4.8&x=-40.266&y=69.849&m=m,,,,;;;
+"1701353582768,U03,0,41827,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",837.0,668.0,837.0,581.0"
+"1701353583742,U03,0,42801,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",901.0,753.0,901.0,666.0"
+1701353583994,U03,0,43053,url_change,https://atlas.mapy.cz/?p=010011&id=cervencove-teploty-vzduchu&n=m&z=4.8&x=-47.307&y=74.382&m=m,,,,;;;
+1701353623077,U03,1,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353623076,U03,1,0,projection,robinson,,,,;;;
+1701353624923,U03,1,1847,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1597.0,126.0,1597.0,39.0;;;
+1701353625061,U03,1,1985,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1597.0,126.0,1597.0,39.0;;;
+1701353651912,U03,1,28836,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='litosfericke-desky'] > h3 > ,169.0,395.0,169.0,308.0;;;
+1701353652067,U03,1,28991,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='litosfericke-desky'] > h3 > ,169.0,395.0,169.0,308.0;;;
+1701353652738,U03,1,29662,url_change,https://atlas.mapy.cz/?p=000011&id=litosfericke-desky&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353656234,U03,1,33158,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1593.0,126.0,1593.0,39.0;;;
+1701353656379,U03,1,33303,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1593.0,126.0,1593.0,39.0;;;
+"1701353716922,U03,1,93846,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='povrch-zeme'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/H2_Povrch_zeme.jpg')";"'] > "",41.0,422.0,41.0,335.0";;
+"1701353717075,U03,1,93999,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='povrch-zeme'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/H2_Povrch_zeme.jpg')";"'] > "",41.0,422.0,41.0,335.0";;
+1701353717408,U03,1,94332,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353719240,U03,1,96164,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1590.0,129.0,1590.0,42.0;;;
+1701353719385,U03,1,96309,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1590.0,129.0,1590.0,42.0;;;
+"1701353725485,U03,1,102409,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='tektonika'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/tektonika.jpg')";"'] > "",313.0,441.0,313.0,354.0";;
+"1701353725647,U03,1,102571,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='tektonika'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/tektonika.jpg')";"'] > "",313.0,441.0,313.0,354.0";;
+1701353726107,U03,1,103031,url_change,https://atlas.mapy.cz/?p=000001&id=tektonika&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353810371,U03,2,0,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353810371,U03,2,0,projection,robinson,,,,;;;
+1701353812494,U03,2,2123,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1582.0,118.0,1582.0,31.0;;;
+1701353812632,U03,2,2261,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1582.0,118.0,1582.0,31.0;;;
+1701353824595,U03,2,14224,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni'] > h3 > ,167.0,752.0,167.0,665.0;;;
+1701353824755,U03,2,14384,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni'] > h3 > ,167.0,752.0,167.0,665.0;;;
+1701353825312,U03,2,14941,url_change,https://atlas.mapy.cz/?p=011000&id=zalidneni&n=m&z=2.7&x=0.000&y=0.000&tl=7&m=m,,,,;;;
+1701353826990,U03,2,16619,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1576.0,132.0,1576.0,45.0;;;
+1701353827082,U03,2,16711,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1579.0,132.0,1579.0,45.0;;;
+"1701353829864,U03,2,19493,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni-oblasti'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A6_Zalidneni.jpg')";"'] > "",50.0,693.0,50.0,606.0";;
+"1701353829982,U03,2,19611,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni-oblasti'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A6_Zalidneni.jpg')";"'] > "",50.0,693.0,50.0,606.0";;
+1701353831152,U03,2,20781,url_change,https://atlas.mapy.cz/?p=011001&id=zalidneni-oblasti&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353837009,U03,2,26638,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1600.0,124.0,1600.0,37.0;;;
+1701353837140,U03,2,26769,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > path[d='M1.2 5.4H16.8L24 12.6H8.4L1.2 5.4zm-1.2 6h4.8l2.4 2.4H18l4.8 4.8H7.2L0 11.4z'][fill-rule='evenodd'] > ,1600.0,124.0,1600.0,37.0;;;
+"1701353842390,U03,2,32019,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A6_Zalidneni.jpg')";"'] > "",203.0,925.0,203.0,838.0";;
+"1701353842513,U03,2,32142,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='zalidneni'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/A6_Zalidneni.jpg')";"'] > "",203.0,925.0,203.0,838.0";;
+1701353842913,U03,2,32542,url_change,https://atlas.mapy.cz/?p=011000&id=zalidneni&n=m&z=2.7&x=0.000&y=0.000&tl=7&m=m,,,,;;;
+1701353849355,U03,2,38984,mouse_wheel_start,100,,,,;;;
+1701353849355,U03,2,38984,mouse_wheel_end,100,,,,;;;
+1701353849673,U03,2,39302,url_change,https://atlas.mapy.cz/?p=011000&id=zalidneni&n=m&z=2.5&x=10.227&y=-2.880&tl=7&m=m,,,,;;;
+1701353850776,U03,2,40405,mouse_wheel_start,-100,,,,;;;
+1701353850864,U03,2,40493,mouse_wheel_end,-100,,,,;;;
+1701353851195,U03,2,40824,url_change,https://atlas.mapy.cz/?p=011000&id=zalidneni&n=m&z=2.9&x=-27.646&y=1.792&tl=7&m=m,,,,;;;
+1701353936099,U03,3,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701353936098,U03,3,0,projection,robinson,,,,;;;
+1701353937768,U03,3,1670,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1604.0,114.0,1604.0,27.0;;;
+1701353937915,U03,3,1817,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1604.0,114.0,1604.0,27.0;;;
+1701353954476,U03,3,18378,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li.active[data-mapset='povrch-zeme'] > ,72.0,389.0,72.0,302.0;;;
+1701353954621,U03,3,18523,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li.active[data-mapset='povrch-zeme'] > ,72.0,389.0,72.0,302.0;;;
+1701353958011,U03,3,21913,mouse_wheel_start,-100,,,,;;;
+1701353958011,U03,3,21913,mouse_wheel_end,-100,,,,;;;
+1701353958330,U03,3,22232,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.9&x=1.086&y=6.815&m=m,,,,;;;
+1701353958350,U03,3,22252,mouse_wheel_start,-100,,,,;;;
+1701353958512,U03,3,22414,mouse_wheel_end,-100,,,,;;;
+1701353958830,U03,3,22732,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.5&x=4.015&y=20.844&m=m,,,,;;;
+1701353959067,U03,3,22969,mouse_wheel_start,-100,,,,;;;
+1701353959103,U03,3,23005,mouse_wheel_end,-100,,,,;;;
+1701353959420,U03,3,23322,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.9&x=6.063&y=25.053&m=m,,,,;;;
+"1701353959982,U03,3,23884,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",897.0,377.0,897.0,290.0"
+"1701353961001,U03,3,24903,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",903.0,600.0,903.0,513.0"
+1701353961171,U03,3,25073,mouse_wheel_start,100,,,,;;;
+1701353961171,U03,3,25073,mouse_wheel_end,100,,,,;;;
+1701353961490,U03,3,25392,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.7&x=4.303&y=44.482&m=m,,,,;;;
+1701353961645,U03,3,25547,mouse_wheel_start,100,,,,;;;
+1701353961645,U03,3,25547,mouse_wheel_end,100,,,,;;;
+1701353961960,U03,3,25862,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.5&x=2.414&y=44.872&m=m,,,,;;;
+"1701353962230,U03,3,26132,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",905.0,584.0,905.0,497.0"
+"1701353962801,U03,3,26703,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",918.0,649.0,918.0,562.0"
+1701353963011,U03,3,26913,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.5&x=0.609&y=52.351&m=m,,,,;;;
+1701353964873,U03,3,28775,mouse_wheel_start,-100,,,,;;;
+1701353964873,U03,3,28775,mouse_wheel_end,-100,,,,;;;
+1701353965181,U03,3,29083,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.7&x=1.803&y=51.137&m=m,,,,;;;
+"1701353965508,U03,3,29410,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",900.0,641.0,900.0,554.0"
+"1701353965995,U03,3,29897,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",885.0,688.0,885.0,601.0"
+1701353966261,U03,3,30163,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.7&x=3.868&y=55.943&m=m,,,,;;;
+1701353974892,U03,3,38794,mouse_wheel_start,-100,,,,;;;
+1701353974892,U03,3,38794,mouse_wheel_end,-100,,,,;;;
+1701353975210,U03,3,39112,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.9&x=5.806&y=54.030&m=m,,,,;;;
+"1701353975611,U03,3,39513,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",911.0,700.0,911.0,613.0"
+"1701353976029,U03,3,39931,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",910.0,734.0,910.0,647.0"
+1701353976185,U03,3,40087,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.9&x=6.075&y=57.089&m=m,,,,;;;
+1701353976269,U03,3,40171,mouse_wheel_start,-100,,,,;;;
+1701353976269,U03,3,40171,mouse_wheel_end,-100,,,,;;;
+1701353976580,U03,3,40482,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.1&x=7.685&y=55.119&m=m,,,,;;;
+1701353976811,U03,3,40713,mouse_wheel_start,100,,,,;;;
+1701353976811,U03,3,40713,mouse_wheel_end,100,,,,;;;
+1701353977130,U03,3,41032,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=3.9&x=6.075&y=57.089&m=m,,,,;;;
+1701353985487,U03,3,49389,mouse_wheel_start,-100,,,,;;;
+1701353985487,U03,3,49389,mouse_wheel_end,-100,,,,;;;
+1701353985801,U03,3,49703,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.1&x=5.460&y=55.596&m=m,,,,;;;
+"1701353986056,U03,3,49958,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",797.0,678.0,797.0,591.0"
+"1701353986465,U03,3,50367,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",780.0,736.0,780.0,649.0"
+1701353986661,U03,3,50563,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.1&x=7.472&y=60.204&m=m,,,,;;;
+1701353986675,U03,3,50577,mouse_wheel_start,-100,,,,;;;
+1701353986675,U03,3,50577,mouse_wheel_end,-100,,,,;;;
+1701353986990,U03,3,50892,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.3&x=7.081&y=58.415&m=m,,,,;;;
+1701353989449,U03,3,53351,mouse_wheel_start,-100,,,,;;;
+1701353989521,U03,3,53423,mouse_wheel_end,-100,,,,;;;
+1701353989840,U03,3,53742,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.9&x=2.369&y=51.760&m=m,,,,;;;
+"1701353990494,U03,3,54396,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",786.0,827.0,786.0,740.0"
+"1701353991005,U03,3,54907,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",783.0,774.0,783.0,687.0"
+1701353991320,U03,3,55222,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=4.9&x=2.495&y=49.432&m=m,,,,;;;
+1701354020075,U03,4,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354020074,U03,4,0,projection,robinson,,,,;;;
+1701354022404,U03,4,2330,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1578.0,120.0,1578.0,33.0;;;
+1701354022551,U03,4,2477,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1578.0,120.0,1578.0,33.0;;;
+"1701354043172,U03,4,23098,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='objevne-cesty'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/objevne-cesty.jpg')";"'] > "",886.0,613.0,886.0,526.0";;
+"1701354043309,U03,4,23235,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='objevne-cesty'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/objevne-cesty.jpg')";"'] > "",886.0,613.0,886.0,526.0";;
+1701354044535,U03,4,24461,url_change,https://atlas.mapy.cz/?p=000000&id=objevne-cesty&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354130106,U03,5,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354130105,U03,5,0,projection,robinson,,,,;;;
+1701354131997,U03,5,1892,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1590.0,116.0,1590.0,29.0;;;
+1701354132144,U03,5,2039,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1590.0,116.0,1590.0,29.0;;;
+1701354144950,U03,5,14845,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='tezba'] > h3 > ,97.0,811.0,97.0,724.0;;;
+1701354145103,U03,5,14998,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='tezba'] > h3 > ,97.0,811.0,97.0,724.0;;;
+1701354145718,U03,5,15613,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354154246,U03,5,24141,mouse_wheel_start,-100,,,,;;;
+1701354154326,U03,5,24221,mouse_wheel_end,-100,,,,;;;
+1701354154638,U03,5,24533,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.1&x=3.310&y=-3.181&m=m,,,,;;;
+"1701354159399,U03,5,29294,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1122.0,612.0,1122.0,525.0"
+"1701354159886,U03,5,29781,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1120.0,723.0,1120.0,636.0"
+1701354160094,U03,5,29989,mouse_wheel_start,-100,,,,;;;
+1701354160094,U03,5,29989,mouse_wheel_end,-100,,,,;;;
+1701354160406,U03,5,30301,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.3&x=10.089&y=10.318&m=m,,,,;;;
+1701354160480,U03,5,30375,mouse_wheel_start,-100,,,,;;;
+1701354160480,U03,5,30375,mouse_wheel_end,-100,,,,;;;
+1701354160797,U03,5,30692,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.5&x=15.600&y=7.816&m=m,,,,;;;
+1701354161136,U03,5,31031,mouse_wheel_start,-100,,,,;;;
+1701354161136,U03,5,31031,mouse_wheel_end,-100,,,,;;;
+1701354161447,U03,5,31342,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.7&x=20.324&y=5.711&m=m,,,,;;;
+"1701354161525,U03,5,31420,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1089.0,707.0,1089.0,620.0"
+"1701354161958,U03,5,31853,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1102.0,675.0,1102.0,588.0"
+1701354162215,U03,5,32110,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.7&x=18.863&y=2.597&m=m,,,,;;;
+1701354162291,U03,5,32186,mouse_wheel_start,-100,,,,;;;
+1701354162291,U03,5,32186,mouse_wheel_end,-100,,,,;;;
+1701354162607,U03,5,32502,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.9&x=23.179&y=1.154&m=m,,,,;;;
+"1701354162647,U03,5,32542,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1103.0,679.0,1103.0,592.0"
+"1701354163064,U03,5,32959,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1120.0,707.0,1120.0,620.0"
+1701354163349,U03,5,33244,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.9&x=21.562&y=3.526&m=m,,,,;;;
+1701354177748,U03,5,47643,mouse_wheel_start,100,,,,;;;
+1701354177814,U03,5,47709,mouse_wheel_end,100,,,,;;;
+1701354178137,U03,5,48032,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.5&x=-0.299&y=10.821&m=m,,,,;;;
+1701354178418,U03,5,48313,mouse_wheel_start,100,,,,;;;
+1701354178501,U03,5,48396,mouse_wheel_end,100,,,,;;;
+1701354178838,U03,5,48733,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=2.9&x=-37.701&y=17.296&m=m,,,,;;;
+"1701354178936,U03,5,48831,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1369.0,671.0,1369.0,584.0"
+"1701354179345,U03,5,49240,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1304.0,720.0,1304.0,633.0"
+1701354179625,U03,5,49520,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=2.9&x=-25.454&y=25.598&m=m,,,,;;;
+1701354179670,U03,5,49565,mouse_wheel_start,-100,,,,;;;
+1701354179670,U03,5,49565,mouse_wheel_end,-100,,,,;;;
+1701354179987,U03,5,49882,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.1&x=-12.299&y=22.780&m=m,,,,;;;
+"1701354180043,U03,5,49938,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1310.0,685.0,1310.0,598.0"
+"1701354180686,U03,5,50581,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1026.0,830.0,1026.0,743.0"
+1701354180950,U03,5,50845,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.1&x=39.320&y=44.229&m=m,,,,;;;
+1701354181231,U03,5,51126,mouse_wheel_start,-100,,,,;;;
+1701354181231,U03,5,51126,mouse_wheel_end,-100,,,,;;;
+1701354181560,U03,5,51455,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.3&x=52.305&y=40.974&m=m,,,,;;;
+1701354181796,U03,5,51691,mouse_wheel_start,-100,,,,;;;
+1701354181796,U03,5,51691,mouse_wheel_end,-100,,,,;;;
+1701354182106,U03,5,52001,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.5&x=63.242&y=38.575&m=m,,,,;;;
+"1701354182128,U03,5,52023,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1352.0,698.0,1352.0,611.0"
+"1701354182476,U03,5,52371,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1355.0,777.0,1355.0,690.0"
+1701354182777,U03,5,52672,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.5&x=66.088&y=47.521&m=m,,,,;;;
+1701354188447,U03,5,58342,mouse_wheel_start,-100,,,,;;;
+1701354188601,U03,5,58496,mouse_wheel_end,-100,,,,;;;
+1701354188923,U03,5,58818,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.9&x=84.243&y=41.859&m=m,,,,;;;
+"1701354188956,U03,5,58851,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1352.0,754.0,1352.0,667.0"
+"1701354189325,U03,5,59220,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1360.0,824.0,1360.0,737.0"
+1701354189503,U03,5,59398,mouse_wheel_start,-100,,,,;;;
+1701354189503,U03,5,59398,mouse_wheel_end,-100,,,,;;;
+1701354189832,U03,5,59727,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=4.1&x=92.662&y=44.973&m=m,,,,;;;
+1701354192491,U03,5,62386,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > div.content.mapset-active > div.mapset.detail > div.scrollable > div.legend.vertical > table > tbody > tr.interactive.hover > td > span.label.hover > ,1678.0,868.0,1678.0,781.0;;;
+1701354192635,U03,5,62530,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > div.content.mapset-active > div.mapset.detail > div.scrollable > div.legend.vertical > table > tbody > tr.interactive.hover > td > span.label.hover > ,1678.0,868.0,1678.0,781.0;;;
+1701354192651,U03,5,62546,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=4.1&x=92.662&y=44.973&l2=i20&m=m,,,,;;;
+1701354193480,U03,5,63375,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=2.6&x=0.000&y=0.000&l2=i20&m=m,,,,;;;
+1701354194023,U03,5,63918,mouse_wheel_start,-100,,,,;;;
+1701354194088,U03,5,63983,mouse_wheel_end,-100,,,,;;;
+"1701354194322,U03,5,64217,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1372.0,434.0,1372.0,347.0"
+"1701354194869,U03,5,64764,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1298.0,677.0,1298.0,590.0"
+1701354195095,U03,5,64990,mouse_wheel_start,-100,,,,;;;
+1701354195095,U03,5,64990,mouse_wheel_end,-100,,,,;;;
+1701354195406,U03,5,65301,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.4&x=69.127&y=38.735&l2=i20&m=m,,,,;;;
+1701354195542,U03,5,65437,mouse_wheel_start,-100,,,,;;;
+1701354195578,U03,5,65473,mouse_wheel_end,-100,,,,;;;
+1701354195897,U03,5,65792,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=3.8&x=84.569&y=35.782&l2=i20&m=m,,,,;;;
+"1701354195898,U03,5,65793,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1277.0,658.0,1277.0,571.0"
+"1701354196361,U03,5,66256,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1281.0,742.0,1281.0,655.0"
+1701354196548,U03,5,66443,mouse_wheel_start,-100,,,,;;;
+1701354196548,U03,5,66443,mouse_wheel_end,-100,,,,;;;
+1701354196867,U03,5,66762,url_change,https://atlas.mapy.cz/?p=010000&id=tezba&n=m&z=4.0&x=92.930&y=41.073&l2=i20&m=m,,,,;;;
+1701354233697,U03,6,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354233696,U03,6,0,projection,robinson,,,,;;;
+1701354235110,U03,6,1414,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1598.0,131.0,1598.0,44.0;;;
+1701354235241,U03,6,1545,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1598.0,131.0,1598.0,44.0;;;
+1701354307580,U03,6,73884,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='komplexni-doprava'] > h3 > ,659.0,994.0,659.0,907.0;;;
+1701354307703,U03,6,74007,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='komplexni-doprava'] > h3 > ,659.0,994.0,659.0,907.0;;;
+1701354308682,U03,6,74986,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354319164,U03,6,85468,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > div.content.mapset-active > div.mapset.detail > div.scrollable > div.legend.vertical > h4.interactive.hover > ,1690.0,850.0,1690.0,763.0;;;
+1701354319323,U03,6,85627,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#sidebar.no-mobile.open > div.content.mapset-active > div.mapset.detail > div.scrollable > div.legend.vertical > h4.interactive.hover > ,1690.0,850.0,1690.0,763.0;;;
+1701354319343,U03,6,85647,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.7&x=0.000&y=0.000&l2=g2&m=m,,,,;;;
+1701354320148,U03,6,86452,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.6&x=0.000&y=0.000&l2=g2&m=m,,,,;;;
+"1701354322973,U03,6,89277,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1021.0,593.0,1021.0,506.0"
+"1701354323815,U03,6,90119,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1027.0,674.0,1027.0,587.0"
+1701354324138,U03,6,90442,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.6&x=-1.366&y=16.099&l2=g2&m=m,,,,;;;
+1701354324266,U03,6,90570,mouse_wheel_start,-100,,,,;;;
+1701354324266,U03,6,90570,mouse_wheel_end,-100,,,,;;;
+1701354324589,U03,6,90893,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.8&x=4.978&y=12.818&l2=g2&m=m,,,,;;;
+"1701354325223,U03,6,91527,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1063.0,685.0,1063.0,598.0"
+1701354325968,U03,6,92272,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.8&x=10.575&y=17.836&l2=g2&m=m,,,,;;;
+"1701354326551,U03,6,92855,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1045.0,735.0,1045.0,648.0"
+1701354326798,U03,6,93102,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.8&x=8.643&y=21.470&l2=g2&m=m,,,,;;;
+"1701354380449,U03,6,146753,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1210.0,798.0,1210.0,711.0"
+"1701354380618,U03,6,146922,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1210.0,798.0,1210.0,711.0"
+1701354380630,U03,6,146934,url_change,https://atlas.mapy.cz/?fb=5fd7898ad99088394e7097a5_90.239_-19.104&p=001100&id=komplexni-doprava&n=m&z=2.8&x=8.643&y=21.470&l2=g2&m=m,,,,;;;
+"1701354381731,U03,6,148035,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > div.bubble.permanent[style='left: 1210px; top: 711px;"'] > button.close > "",1265.0,731.0,1265.0,644.0"
+"1701354381886,U03,6,148190,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > div.bubble.permanent[style='left: 1210px; top: 711px;"'] > button.close > "",1265.0,731.0,1265.0,644.0"
+1701354381890,U03,6,148194,url_change,https://atlas.mapy.cz/?p=001100&id=komplexni-doprava&n=m&z=2.8&x=8.643&y=21.470&l2=g2&m=m,,,,;;;
+1701354406424,U03,7,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354406423,U03,7,0,projection,robinson,,,,;;;
+1701354408269,U03,7,1846,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1578.0,121.0,1578.0,34.0;;;
+1701354408438,U03,7,2015,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > ,1578.0,121.0,1578.0,34.0;;;
+"1701354418205,U03,7,11782,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='spotreba-kalorii'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/F6_Spotreba-kalorii.jpg')";"'] > "",791.0,468.0,791.0,381.0";;
+"1701354418344,U03,7,11921,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='spotreba-kalorii'] > div.illustration[style='background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(0, 0, 0)), url('src/img/maps/F6_Spotreba-kalorii.jpg')";"'] > "",791.0,468.0,791.0,381.0";;
+1701354418875,U03,7,12452,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+"1701354423871,U03,7,17448,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1121.0,514.0,1121.0,427.0"
+"1701354424590,U03,7,18167,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1134.0,553.0,1134.0,466.0"
+1701354424776,U03,7,18353,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=-2.873&y=7.591&m=m,,,,;;;
+"1701354437079,U03,7,30656,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",606.0,448.0,606.0,361.0"
+1701354437674,U03,7,31251,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=-5.316&y=10.705&m=m,,,,;;;
+"1701354437696,U03,7,31273,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",617.0,464.0,617.0,377.0"
+1701354483329,U03,7,76906,mouse_wheel_start,-100,,,,;;;
+1701354483329,U03,7,76906,mouse_wheel_end,-100,,,,;;;
+1701354483664,U03,7,77241,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.9&x=-2.057&y=15.026&m=m,,,,;;;
+"1701354483839,U03,7,77416,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",926.0,443.0,926.0,356.0"
+"1701354484245,U03,7,77822,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",914.0,524.0,914.0,437.0"
+1701354484546,U03,7,78123,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.9&x=0.275&y=28.750&m=m,,,,;;;
+1701354484583,U03,7,78160,mouse_wheel_start,-100,,,,;;;
+1701354484583,U03,7,78160,mouse_wheel_end,-100,,,,;;;
+1701354484899,U03,7,78476,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=3.1&x=2.532&y=30.669&m=m,,,,;;;
+"1701354485037,U03,7,78614,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",926.0,507.0,926.0,420.0"
+"1701354485699,U03,7,79276,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",885.0,521.0,885.0,434.0"
+1701354485936,U03,7,79513,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=3.1&x=9.749&y=32.734&m=m,,,,;;;
+1701354486101,U03,7,79678,mouse_wheel_start,100,,,,;;;
+1701354486101,U03,7,79678,mouse_wheel_end,100,,,,;;;
+1701354486421,U03,7,79998,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.9&x=6.127&y=29.258&m=m,,,,;;;
+"1701354486671,U03,7,80248,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",951.0,400.0,951.0,313.0"
+"1701354487207,U03,7,80784,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",903.0,407.0,903.0,320.0"
+1701354487475,U03,7,81052,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.9&x=15.754&y=30.444&m=m,,,,;;;
+"1701354493262,U03,7,86839,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1202.0,535.0,1202.0,448.0"
+"1701354493779,U03,7,87356,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1165.0,480.0,1165.0,393.0"
+1701354493965,U03,7,87542,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.9&x=22.646&y=21.125&m=m,,,,;;;
+1701354495243,U03,7,88820,mouse_wheel_start,100,,,,;;;
+1701354495243,U03,7,88820,mouse_wheel_end,100,,,,;;;
+1701354495556,U03,7,89133,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=6.975&y=27.739&m=m,,,,;;;
+"1701354499788,U03,7,93365,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1141.0,756.0,1141.0,669.0"
+"1701354500421,U03,7,93998,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1172.0,763.0,1172.0,676.0"
+1701354500566,U03,7,94143,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=-0.094&y=29.101&m=m,,,,;;;
+"1701354504002,U03,7,97579,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1142.0,727.0,1142.0,640.0"
+"1701354504395,U03,7,97972,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1167.0,731.0,1167.0,644.0"
+1701354504666,U03,7,98243,url_change,https://atlas.mapy.cz/?p=010000&id=spotreba-kalorii&n=m&z=2.7&x=-5.830&y=29.879&m=m,,,,;;;
+1701354516791,U03,8,1,url_change,https://atlas.mapy.cz/?p=000101&id=povrch-zeme&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354516790,U03,8,0,projection,robinson,,,,;;;
+1701354518494,U03,8,1704,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1598.0,117.0,1598.0,30.0;;;
+1701354518641,U03,8,1851,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#menu.no-mobile > div.bookmark.mapset-active > button.mapsets[title='Vybrat mapu'] > svg.Ico.Ico--vrstvy[width='24'][height='24'][viewBox='0 0 24 24'] > ,1598.0,117.0,1598.0,30.0;;;
+1701354525066,U03,8,8276,pointerdown,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='biomy'] > h3 > ,789.0,499.0,789.0,412.0;;;
+1701354525205,U03,8,8415,pointerup,html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#maps > ul.category > li[data-mapset='biomy'] > h3 > ,789.0,499.0,789.0,412.0;;;
+1701354526360,U03,8,9570,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=2.7&x=0.000&y=0.000&m=m,,,,;;;
+1701354527243,U03,8,10453,mouse_wheel_start,-100,,,,;;;
+1701354527498,U03,8,10708,mouse_wheel_end,-100,,,,;;;
+1701354527859,U03,8,11069,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.3&x=3.375&y=2.490&m=m,,,,;;;
+1701354528044,U03,8,11254,mouse_wheel_start,-100,,,,;;;
+1701354528044,U03,8,11254,mouse_wheel_end,-100,,,,;;;
+1701354528419,U03,8,11629,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.5&x=3.562&y=1.717&m=m,,,,;;;
+"1701354528584,U03,8,11794,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",803.0,540.0,803.0,453.0"
+"1701354529095,U03,8,12305,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",774.0,621.0,774.0,534.0"
+1701354529333,U03,8,12543,mouse_wheel_start,-100,,,,;;;
+1701354529394,U03,8,12604,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.5&x=7.270&y=10.772&m=m,,,,;;;
+1701354529333,U03,8,12543,mouse_wheel_end,-100,,,,;;;
+1701354529652,U03,8,12862,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.7&x=6.787&y=9.925&m=m,,,,;;;
+1701354529978,U03,8,13188,mouse_wheel_start,-100,,,,;;;
+1701354529978,U03,8,13188,mouse_wheel_end,-100,,,,;;;
+1701354530292,U03,8,13502,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=6.339&y=9.150&m=m,,,,;;;
+"1701354571390,U03,8,54600,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1208.0,719.0,1208.0,632.0"
+"1701354572099,U03,8,55309,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1216.0,648.0,1216.0,561.0"
+1701354572434,U03,8,55644,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=5.550&y=3.135&m=m,,,,;;;
+"1701354576507,U03,8,59717,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1011.0,676.0,1011.0,589.0"
+"1701354577071,U03,8,60281,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1014.0,650.0,1014.0,563.0"
+1701354577242,U03,8,60452,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=5.260&y=0.933&m=m,,,,;;;
+"1701354586530,U03,8,69740,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",984.0,852.0,984.0,765.0"
+"1701354587107,U03,8,70317,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",990.0,781.0,990.0,694.0"
+1701354587245,U03,8,70455,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=4.691&y=-5.082&m=m,,,,;;;
+"1701354602835,U03,8,86045,pointerdown,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",965.0,898.0,965.0,811.0"
+"1701354603244,U03,8,86454,pointerup,""html > body.clickable[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",977.0,873.0,977.0,786.0"
+1701354603399,U03,8,86609,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=3.542&y=-7.200&m=m,,,,;;;
+"1701354609568,U03,8,92778,pointerdown,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1202.0,866.0,1202.0,779.0"
+"1701354610010,U03,8,93220,pointerup,""html > body[cy-dot-mousedown-init=''][data-card='minimized'] > div#map[style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0)";'] > canvas[width='1600'][height='953'][style='width: 1600px; height: 953px;"'] > "",1204.0,940.0,1204.0,853.0"
+1701354610351,U03,8,93561,url_change,https://atlas.mapy.cz/?p=000111&id=biomy&n=m&z=3.9&x=3.342&y=-0.931&m=m,,,,;;;

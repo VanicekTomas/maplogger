@@ -391,6 +391,46 @@
     return decodeUrlPart(parsed.params.get(key));
   }
 
+  function extractUrlNumberParam(urlString, key){
+    return toNumber(extractUrlParam(urlString, key));
+  }
+
+  function formatPanDeltaValue(n){
+    if (!Number.isFinite(n)) return '';
+    const abs = Math.abs(n);
+    if (abs === 0) return '0';
+    if (abs >= 100) return n.toFixed(1);
+    if (abs >= 1) return n.toFixed(3);
+    return n.toFixed(4);
+  }
+
+  function formatSignedPanDelta(n){
+    if (!Number.isFinite(n)) return '';
+    const core = formatPanDeltaValue(n);
+    if (!core) return '';
+    return n > 0 ? ('+' + core) : core;
+  }
+
+  function formatPanChange(prevX, prevY, currX, currY){
+    if (!Number.isFinite(prevX) || !Number.isFinite(prevY) || !Number.isFinite(currX) || !Number.isFinite(currY)) return '';
+
+    const dx = currX - prevX;
+    const dy = currY - prevY;
+    const eps = 1e-9;
+    if (Math.abs(dx) <= eps && Math.abs(dy) <= eps) return '';
+
+    return 'dx=' + formatSignedPanDelta(dx) + ' | dy=' + formatSignedPanDelta(dy);
+  }
+
+  function annotatePanChanges(rows){
+    let prevUrlChange = null;
+    for (const r of (rows || [])){
+      if (!r || r.type !== 'url_change') continue;
+      r.pan = prevUrlChange ? formatPanChange(prevUrlChange.x, prevUrlChange.y, r.x, r.y) : '';
+      prevUrlChange = r;
+    }
+  }
+
   function extractClickTarget(val){
     const raw = String(val === null || val === undefined ? '' : val);
     if (!raw) return 'other';
@@ -465,6 +505,9 @@
       parameter: '',
       zoom: '',
       map: '',
+      x: null,
+      y: null,
+      pan: '',
       click: '',
       projection: ''
     };
@@ -473,6 +516,8 @@
       out.parameter = extractUrlParam(row.val, 'p');
       out.zoom = extractUrlParam(row.val, 'z');
       out.map = normalizeText(extractUrlParam(row.val, 'id'));
+      out.x = extractUrlNumberParam(row.val, 'x');
+      out.y = extractUrlNumberParam(row.val, 'y');
     } else if (outType === 'pointerdown'){
       out.click = extractClickTarget(row.val);
     } else if (outType === 'projection'){
@@ -608,6 +653,8 @@
       if (!transformed) continue;
       transformedRows.push(transformed);
     }
+
+    annotatePanChanges(transformedRows);
 
     const eventCounts = new Map();
     for (const r of transformedRows){
@@ -1840,6 +1887,7 @@
           parameter: r.type === 'url_change' ? (r.parameter || '') : '',
           zoom: r.type === 'url_change' ? (r.zoom || '') : '',
           map: r.type === 'url_change' ? (r.map || '') : '',
+          pan: r.type === 'url_change' ? (r.pan || '') : '',
           click: r.type === 'pointerdown' ? (r.click || '') : '',
           projection: r.type === 'projection' ? (r.projection || '') : ''
         };
@@ -1863,7 +1911,7 @@
   }
 
   function buildConvertedFields(){
-    return ['absoluteTime','participant_ID','task','task_ID','time','type','parameter','zoom','map','click','projection'];
+    return ['absoluteTime','participant_ID','task','task_ID','time','type','parameter','zoom','map','pan','click','projection'];
   }
 
   function downloadConvertedCsv(participants){
@@ -1881,7 +1929,8 @@
     const fields = buildConvertedFields();
     const data = rows.map(r => fields.map(f => (r[f] === undefined || r[f] === null) ? '' : r[f]));
     const csv = Papa.unparse({ fields, data });
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+    // UTF-8 BOM improves Czech diacritics handling in spreadsheet apps (notably Excel).
+    const blob = new Blob(['\uFEFF', csv], { type: 'text/csv;charset=utf-8' });
     const fileName = 'cartologger_converted_all_participants.csv';
 
     try{ saveAs(blob, fileName); }

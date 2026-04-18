@@ -6,7 +6,7 @@ MapLogger Suite is a small, fully in‑browser toolkit:
 
 - **Builder** turns your existing map pages into a ready‑to‑run usability study.
 - **Analyser** loads the resulting CSV logs (one CSV per participant) and produces summary statistics and charts.
-- **CartoLogger Extension** analyses CSV exports from the CartoLogger tool using a transformed interaction model (`parameter`, `zoom`, `map`, `click`, `projection`) and sequence reconstruction.
+- **CartoLogger Extension** analyses CSV exports from the CartoLogger tool using a transformed interaction model (`parameter`, `zoom`, `map`, `pan`, `click`, `projection`) and sequence reconstruction.
 
 Everything runs locally in your browser.
 
