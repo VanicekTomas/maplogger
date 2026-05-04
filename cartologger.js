@@ -36,11 +36,26 @@
   const infoModalCloseBtn = document.getElementById('info-modal-close');
 
   const REQUIRED_COLUMNS = ['absoluteTime','task','time','type','val'];
+  const ADD_EVENTS_REQUIRED_COLUMNS = ['timestamp_task','participant_id','task_id','event'];
+  const ADD_EVENTS_FILENAME = 'Tobii_processed_events.csv';
+  const ADD_EVENTS_BASE_URLS = [
+    './sample_data_CartoLogger/add_events/',
+    '/sample_data_CartoLogger/add_events/',
+    '../sample_data_CartoLogger/add_events/',
+    '../../sample_data_CartoLogger/add_events/'
+  ];
 
   /** @type {{name:string,size:number,rows:any[],meta:{parseErrors:string[]}}[]} */
   let datasets = [];
   /** @type {any[]} */
   let lastComputedParticipants = [];
+  let addEventsState = {
+    status: 'idle',
+    rows: [],
+    warnings: [],
+    skipped: 0,
+    sourceUrl: ''
+  };
 
   // IPAtlas classification: URL id=mapa -> canonical task_ID
   const TASK_ID_BY_MAP_ID = {
@@ -204,7 +219,7 @@
     return s;
   }
 
-  function splitCsvLineLoose(line){
+  function splitCsvLineLooseWithDelimiter(line, delimiter){
     const src = String(line || '');
     const out = [];
     let current = '';
@@ -221,7 +236,7 @@
         inQuotes = !inQuotes;
         continue;
       }
-      if (ch === ',' && !inQuotes){
+      if (ch === delimiter && !inQuotes){
         out.push(normalizeCsvCell(current));
         current = '';
         continue;
@@ -231,6 +246,21 @@
 
     out.push(normalizeCsvCell(current));
     return { fields: out, malformedQuotes: inQuotes };
+  }
+
+  function splitCsvLineLoose(line){
+    return splitCsvLineLooseWithDelimiter(line, ',');
+  }
+
+  function detectCsvDelimiter(line){
+    const sample = String(line || '');
+    const commaCount = (sample.match(/,/g) || []).length;
+    const semiCount = (sample.match(/;/g) || []).length;
+    return semiCount > commaCount ? ';' : ',';
+  }
+
+  function normalizeHeaderName(name){
+    return normalizeText(name).toLowerCase().replace(/\s+/g, '_');
   }
 
   function parseCartoCsvText(text){
@@ -269,6 +299,72 @@
     return { fields, rows, parseErrors: [] };
   }
 
+  function parseAddEventsCsvText(text){
+    const lines = String(text || '').split(/\r\n|\n|\r/);
+    if (!lines.length) return { fields: [], rows: [], parseErrors: ['Empty file.'] };
+
+    const delimiter = detectCsvDelimiter(lines[0]);
+    const header = splitCsvLineLooseWithDelimiter(lines[0], delimiter);
+    const fields = (header.fields || []).map(normalizeHeaderName).filter(h => h.length > 0);
+    const rows = [];
+
+    const hasNamedColumns = fields.length > 0;
+
+    for (let i=1;i<lines.length;i++){
+      const line = lines[i];
+      if (!line || !line.trim()) continue;
+      const parsed = splitCsvLineLooseWithDelimiter(line, delimiter);
+      const cols = parsed.fields || [];
+
+      const row = {};
+      if (hasNamedColumns){
+        for (let c=0;c<fields.length;c++){
+          row[fields[c]] = c < cols.length ? cols[c] : '';
+        }
+      } else {
+        row.timestamp_task = cols[0] || '';
+        row.participant_id = cols[1] || '';
+        row.task_id = cols[2] || '';
+        row.event = cols[3] || '';
+      }
+
+      rows.push(row);
+    }
+
+    return { fields, rows, parseErrors: [] };
+  }
+
+  function validateAddEventsColumns(fields){
+    const set = new Set((fields || []).map(s => String(s || '').trim().toLowerCase()));
+    return ADD_EVENTS_REQUIRED_COLUMNS.filter(c => !set.has(c));
+  }
+
+  function normalizeAddEventsRows(rows){
+    const out = [];
+    let skipped = 0;
+
+    for (const r of (rows || [])){
+      const timestamp = toNumber(r.timestamp_task);
+      const participantId = normalizeText(r.participant_id);
+      const taskId = toNumber(r.task_id);
+      const eventName = normalizeText(r.event);
+
+      if (!participantId || !eventName || !Number.isFinite(timestamp) || !Number.isFinite(taskId)){
+        skipped += 1;
+        continue;
+      }
+
+      out.push({
+        timestamp,
+        participantId,
+        taskId,
+        event: eventName
+      });
+    }
+
+    return { rows: out, skipped };
+  }
+
   async function parseCsvFile(file){
     const text = await file.text();
     try{
@@ -286,6 +382,72 @@
     }catch(_e){
       return { name: file.name, size: file.size, rows: [], meta: { parseErrors: ['Failed to parse CSV.'] } };
     }
+  }
+
+  async function loadAddEventsData(){
+    if (addEventsState.status === 'loading' || addEventsState.status === 'loaded') return addEventsState;
+
+    addEventsState = {
+      status: 'loading',
+      rows: [],
+      warnings: [],
+      skipped: 0,
+      sourceUrl: ''
+    };
+
+    const attempted = [];
+
+    for (const base of ADD_EVENTS_BASE_URLS){
+      const url = base + ADD_EVENTS_FILENAME;
+      attempted.push(url);
+      try{
+        const res = await fetch(url, { cache: 'no-store' });
+        if (!res.ok) continue;
+        const text = await res.text();
+
+        const parsedRaw = parseAddEventsCsvText(text);
+        const warnings = [];
+        const missing = validateAddEventsColumns(parsedRaw.fields);
+        if (missing.length){
+          warnings.push('Missing columns in add-events CSV: ' + missing.join(', '));
+        }
+        if (parsedRaw.parseErrors && parsedRaw.parseErrors.length){
+          warnings.push.apply(warnings, parsedRaw.parseErrors);
+        }
+
+        const normalized = normalizeAddEventsRows(parsedRaw.rows || []);
+        if (normalized.skipped){
+          warnings.push(normalized.skipped + ' add-events row(s) skipped due to missing timestamp_task, participant_ID, task_ID, or event.');
+        }
+        if (!normalized.rows.length){
+          warnings.push('No usable add-events rows found.');
+        }
+
+        addEventsState = {
+          status: 'loaded',
+          rows: normalized.rows,
+          warnings,
+          skipped: normalized.skipped,
+          sourceUrl: url
+        };
+        return addEventsState;
+      }catch(_e){
+        // try next base path
+      }
+    }
+
+    addEventsState = {
+      status: 'error',
+      rows: [],
+      warnings: [
+        'Could not load add-events CSV (' + ADD_EVENTS_FILENAME + '). Tried: '
+          + attempted.slice(0, 6).join(', ') + (attempted.length > 6 ? ', ...' : '') + '.'
+      ],
+      skipped: 0,
+      sourceUrl: ''
+    };
+
+    return addEventsState;
   }
 
   async function exportCanvasAsPng(canvas, filenameBase){
@@ -355,6 +517,7 @@
 
     datasets.sort((a,b)=> baseName(a.name).localeCompare(baseName(b.name), 'en-GB', { numeric: true }));
     renderFileList();
+    await loadAddEventsData();
     rebuildAll();
   }
 
@@ -681,6 +844,120 @@
         duplicateRows
       },
       taskIdIssues: taskIdMapping.issues
+    };
+  }
+
+  function computeTaskIdOffsets(rows){
+    const offsets = new Map();
+    for (const r of (rows || [])){
+      if (!Number.isFinite(r.taskId)) continue;
+      if (!Number.isFinite(r.absoluteTime) || !Number.isFinite(r.relTime)) continue;
+      const offset = r.absoluteTime - r.relTime;
+      if (!offsets.has(r.taskId) || offset < offsets.get(r.taskId)) offsets.set(r.taskId, offset);
+    }
+    return offsets;
+  }
+
+  function formatMissingParticipantPreview(map, limit){
+    if (!map || !map.size) return '';
+    const entries = Array.from(map.entries())
+      .sort((a,b)=> (b[1] - a[1]) || a[0].localeCompare(b[0], 'en-GB', { numeric: true }));
+    const preview = entries.slice(0, limit)
+      .map(([id, count])=> id + (count > 1 ? (' (' + count + ')') : ''))
+      .join(', ');
+    const suffix = entries.length > limit ? (', ... (' + (entries.length - limit) + ' more)') : '';
+    return preview + suffix;
+  }
+
+  function formatMissingTaskOffsetPreview(map, entryLimit, taskLimit){
+    if (!map || !map.size) return '';
+    const entries = Array.from(map.entries())
+      .sort((a,b)=> a[0].localeCompare(b[0], 'en-GB', { numeric: true }));
+    const previewEntries = entries.slice(0, entryLimit).map(([pid, taskMap])=>{
+      const tasks = Array.from(taskMap.entries()).sort((a,b)=> a[0] - b[0]);
+      const taskPreview = tasks.slice(0, taskLimit)
+        .map(([taskId, count])=> String(taskId) + (count > 1 ? (' (' + count + ')') : ''))
+        .join(', ');
+      const taskSuffix = tasks.length > taskLimit ? ', ...' : '';
+      return pid + ' -> ' + taskPreview + taskSuffix;
+    });
+    const suffix = entries.length > entryLimit ? ('; ... (' + (entries.length - entryLimit) + ' more)') : '';
+    return previewEntries.join('; ') + suffix;
+  }
+
+  function mergeAddEventsIntoParticipants(participants){
+    if (!addEventsState || addEventsState.status !== 'loaded' || !addEventsState.rows.length){
+      return {
+        added: 0,
+        skippedNoParticipant: 0,
+        skippedNoTaskOffset: 0,
+        missingParticipants: new Map(),
+        missingTaskOffsets: new Map()
+      };
+    }
+
+    const participantsById = new Map();
+    const offsetsByParticipant = new Map();
+
+    for (const p of (participants || [])){
+      const key = normalizeText(p.participantId);
+      participantsById.set(key, p);
+      offsetsByParticipant.set(key, computeTaskIdOffsets(p.rows || []));
+    }
+
+    let added = 0;
+    let skippedNoParticipant = 0;
+    let skippedNoTaskOffset = 0;
+    const missingParticipants = new Map();
+    const missingTaskOffsets = new Map();
+
+    for (const ev of addEventsState.rows){
+      const key = normalizeText(ev.participantId);
+      const target = participantsById.get(key);
+      if (!target){
+        skippedNoParticipant += 1;
+        missingParticipants.set(ev.participantId, (missingParticipants.get(ev.participantId) || 0) + 1);
+        continue;
+      }
+
+      const offsets = offsetsByParticipant.get(key) || new Map();
+      if (!Number.isFinite(ev.taskId) || !offsets.has(ev.taskId)){
+        skippedNoTaskOffset += 1;
+        if (!missingTaskOffsets.has(ev.participantId)) missingTaskOffsets.set(ev.participantId, new Map());
+        const taskMap = missingTaskOffsets.get(ev.participantId);
+        taskMap.set(ev.taskId, (taskMap.get(ev.taskId) || 0) + 1);
+        continue;
+      }
+
+      const absoluteTime = offsets.get(ev.taskId) + ev.timestamp;
+
+      target.rows.push({
+        idx: 1000000000 + added,
+        absoluteTime,
+        relTime: Number.isFinite(ev.timestamp) ? ev.timestamp : null,
+        task: null,
+        taskId: Number.isFinite(ev.taskId) ? ev.taskId : null,
+        participantId: target.participantId,
+        type: ev.event || '',
+        parameter: '',
+        zoom: '',
+        map: '',
+        x: null,
+        y: null,
+        pan: '',
+        click: '',
+        projection: ''
+      });
+
+      added += 1;
+    }
+
+    return {
+      added,
+      skippedNoParticipant,
+      skippedNoTaskOffset,
+      missingParticipants,
+      missingTaskOffsets
     };
   }
 
@@ -1949,6 +2226,8 @@
       .filter(d => Array.isArray(d.rows) && d.rows.length)
       .map(computeParticipantStats);
 
+    const addEventsMerge = mergeAddEventsIntoParticipants(participants);
+
     lastComputedParticipants = participants;
 
     rebuildParticipantSelect(participants);
@@ -1990,9 +2269,25 @@
     renderSequenceVisualisation(participants, selectedId);
 
     const parseWarnings = datasets.flatMap(d => (d.meta && d.meta.parseErrors ? d.meta.parseErrors.map(e => d.name + ': ' + e) : []));
+    const addEventsWarnings = (addEventsState && addEventsState.warnings) ? addEventsState.warnings : [];
     const conversionIssues = participants.flatMap(p => (p.taskIdIssues || []).map(formatTaskIdIssue));
     const warningBlocks = [];
     if (parseWarnings.length) warningBlocks.push(parseWarnings.slice(0, 6).join('\n'));
+    if (addEventsWarnings.length) warningBlocks.push(addEventsWarnings.slice(0, 4).join('\n'));
+    if (addEventsMerge && (addEventsMerge.skippedNoParticipant || addEventsMerge.skippedNoTaskOffset)){
+      const mergeLines = [];
+      if (addEventsMerge.skippedNoParticipant){
+        mergeLines.push(addEventsMerge.skippedNoParticipant + ' add-events row(s) skipped: participant_ID not found in loaded CartoLogger data.');
+        const preview = formatMissingParticipantPreview(addEventsMerge.missingParticipants, 6);
+        if (preview) mergeLines.push('Missing participant_IDs: ' + preview);
+      }
+      if (addEventsMerge.skippedNoTaskOffset){
+        mergeLines.push(addEventsMerge.skippedNoTaskOffset + ' add-events row(s) skipped: task_ID not found in participant task_ID mappings.');
+        const preview = formatMissingTaskOffsetPreview(addEventsMerge.missingTaskOffsets, 5, 6);
+        if (preview) mergeLines.push('Missing task_ID by participant_ID: ' + preview);
+      }
+      if (mergeLines.length) warningBlocks.push(mergeLines.join('\n'));
+    }
     if (conversionIssues.length){
       const preview = conversionIssues.slice(0, 12).join('\n');
       const suffix = conversionIssues.length > 12 ? ('\n... (' + (conversionIssues.length - 12) + ' more)') : '';
@@ -2050,6 +2345,7 @@
       datasets = loaded;
       datasets.sort((a,b)=> baseName(a.name).localeCompare(baseName(b.name), 'en-GB', { numeric: true }));
       renderFileList();
+      await loadAddEventsData();
       rebuildAll();
     }
   }

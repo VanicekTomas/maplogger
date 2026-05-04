@@ -1,0 +1,1285 @@
+timestamp_task;participant_ID;task_ID;event
+52493;G01;4;Zlato (click)
+10084;G01;2;Pop-up in map: pouste a polopouste
+11646;G01;2;Pop-up in map: pouste a polopouste
+13878;G01;2;Pop-up in map: pouste a polopouste
+18356;G01;2;Pop-up in map: savany a suche stepi
+25046;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+28287;G01;2;Pop-up in map: savany a suche stepi
+28472;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+29359;G01;2;Pop-up in map: savany a suche stepi
+29872;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+31096;G01;2;Pop-up in map: tropicke destne lesy
+32521;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+34417;G01;2;Pop-up in map: tropicke destne lesy
+35051;G01;2;Pop-up in map: tropicke destne lesy
+35376;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+39264;G01;2;Pop-up in map: tropicke destne lesy
+40002;G01;2;Pop-up in map: tropicke destne lesy
+41154;G01;2;Pop-up in map: savany a suche stepi
+42877;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+43549;G01;2;Pop-up in map: savany a suche stepi
+47762;G01;2;Pop-up in map: tropicke destne lesy
+50494;G01;2;Pop-up in map: savany a suche stepi
+50919;G01;2;Pop-up in map: tropicke destne lesy
+52051;G01;2;Pop-up in map: savany a suche stepi
+55787;G01;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59156;G01;2;Pop-up in map: savany a suche stepi
+61127;G01;2;Pop-up in map: pouste a polopouste
+65921;G01;2;Pop-up in map: pouste a polopouste
+66334;G01;2;Pop-up in map: vegetace stredomorskeho typu
+74259;G01;2;Pop-up in map: savany a suche stepi
+74610;G01;2;Pop-up in map: pouste a polopouste
+30140;G02;4;Zlato (hover - start)
+32271;G02;4;Zlato (hover - end)
+32815;G02;4;Zlato (click)
+7689;G02;2;Pop-up in map: savany a suche stepi
+8290;G02;2;Pop-up in map: tropicke destne lesy
+12487;G02;2;Hover in legend: vegetace stredomorskeho typu
+12784;G02;2;Hover in legend: pouste a polopouste
+14147;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+14449;G02;2;Pop-up in map: pouste a polopouste
+18475;G02;2;Pop-up in map: savany a suche stepi
+19935;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+20169;G02;2;Pop-up in map: savany a suche stepi
+20862;G02;2;Pop-up in map: lesostepi a stepi
+21347;G02;2;Pop-up in map: savany a suche stepi
+23225;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+24108;G02;2;Pop-up in map: savany a suche stepi
+24905;G02;2;Pop-up in map: tropicke destne lesy
+26058;G02;2;Pop-up in map: tropicke destne lesy
+30303;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+33475;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+33628;G02;2;Pop-up in map: savany a suche stepi
+35627;G02;2;Pop-up in map: pouste a polopouste
+36098;G02;2;Pop-up in map: savany a suche stepi
+37033;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+37473;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+37640;G02;2;Pop-up in map: savany a suche stepi
+38318;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+39798;G02;2;Pop-up in map: savany a suche stepi
+40067;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+40832;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+42307;G02;2;Pop-up in map: savany a suche stepi
+43272;G02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+41747;G03;2;Pop-up in map: savany a suche stepi
+44747;G03;2;Pop-up in map: pouste a polopouste
+46862;G03;2;Pop-up in map: pouste a polopouste
+48665;G03;2;Hover in legend: pouste a polopouste
+48918;G03;2;Hover in legend: subtropicke lesy (suche i vlhke)
+49162;G03;2;Hover in legend: pouste a polopouste
+53632;G03;2;Pop-up in map: savany a suche stepi
+56648;G03;2;Hover in legend: trvale zalednene oblasti
+59652;G03;2;Hover in legend: alpinska a vysokohorska vegetace
+60055;G03;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+60530;G03;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+60958;G03;2;Hover in legend: vegetace mocalu a bazin
+64012;G03;2;Pop-up in map: savany a suche stepi
+65372;G03;2;Pop-up in map: savany a suche stepi
+69810;G03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+75350;G03;2;Pop-up in map: tropicke destne lesy
+77150;G03;2;Pop-up in map: tropicke destne lesy
+81361;G03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+81965;G03;2;Pop-up in map: savany a suche stepi
+82255;G03;2;Pop-up in map: tropicke destne lesy
+82650;G03;2;Pop-up in map: savany a suche stepi
+83646;G03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+84995;G03;2;Pop-up in map: savany a suche stepi
+86306;G03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+87175;G03;2;Pop-up in map: vegetace stredomorskeho typu
+28952;G03;4;Zlato (hover - start)
+29662;G03;4;Zlato (click)
+29662;G03;4;Zlato (hover - end)
+22274;G04;2;Pop-up in map: pouste a polopouste
+23221;G04;2;Pop-up in map: tundry a lesotundry
+37939;G04;2;Pop-up in map: trvale zalednene oblasti
+31309;G04;4;Zlato (hover - start)
+92060;G04;4;Zlato (click)
+92060;G04;4;Zlato (hover - end)
+39957;G05;4;Zlato (hover - start)
+43054;G05;4;Zlato (click)
+43054;G05;4;Zlato (hover - end)
+10595;G05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+11182;G05;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+13196;G05;2;Hover in legend: tundry a lesotundry
+53932;G06;4;Zlato (hover - start)
+54810;G06;4;Zlato (click)
+54810;G06;4;Zlato (hover - end)
+20610;G07;2;Pop-up in map: pouste a polopouste
+29995;G07;2;Pop-up in map: pouste a polopouste
+40885;G07;2;Pop-up in map: vegetace stredomorskeho typu
+44630;G07;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+45791;G07;2;Pop-up in map: pouste a polopouste
+48208;G07;2;Pop-up in map: savany a suche stepi
+49153;G07;2;Pop-up in map: savany a suche stepi
+55073;G07;2;Pop-up in map: tropicke destne lesy
+56950;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59886;G07;2;Pop-up in map: savany a suche stepi
+60946;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+61298;G07;2;Pop-up in map: savany a suche stepi
+62323;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+65600;G07;2;Pop-up in map: savany a suche stepi
+65855;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+66858;G07;2;Pop-up in map: savany a suche stepi
+69335;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+73101;G07;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+74043;G07;2;Pop-up in map: savany a suche stepi
+74716;G07;2;Pop-up in map: pouste a polopouste
+76508;G07;2;Pop-up in map: pouste a polopouste
+78421;G07;2;Pop-up in map: lesostepi a stepi
+78848;G07;2;Pop-up in map: vegetace stredomorskeho typu
+84078;G07;2;Pop-up in map: pouste a polopouste
+85385;G07;2;Pop-up in map: savany a suche stepi
+24044;G07;4;Zlato (hover - start)
+24694;G07;4;Zlato (hover - end)
+24934;G07;4;Zlato (click)
+14065;G08;2;Pop-up in map: pouste a polopouste
+19752;G08;2;Pop-up in map: savany a suche stepi
+26901;G08;2;Pop-up in map: tropicke destne lesy
+30221;G08;2;Pop-up in map: savany a suche stepi
+30641;G08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+31938;G08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+36191;G08;2;Pop-up in map: savany a suche stepi
+37508;G08;2;Pop-up in map: pouste a polopouste
+39626;G08;2;Pop-up in map: pouste a polopouste
+40015;G08;2;Pop-up in map: tropicke destne lesy
+40446;G08;2;Pop-up in map: pouste a polopouste
+15090;G08;4;Zlato (hover - start)
+16127;G08;4;Zlato (click)
+16127;G08;4;Zlato (hover - end)
+42878;G09;4;Zlato (hover - start)
+46313;G09;4;Zlato (click)
+46313;G09;4;Zlato (hover - end)
+11217;G10;2;Pop-up in map: pouste a polopouste
+15305;G10;2;Pop-up in map: savany a suche stepi
+16733;G10;2;Pop-up in map: savany a suche stepi
+20833;G10;2;Pop-up in map: tropicke destne lesy
+23208;G10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+27465;G10;2;Pop-up in map: savany a suche stepi
+32031;G10;2;Pop-up in map: pouste a polopouste
+32648;G10;2;Pop-up in map: vegetace stredomorskeho typu
+12577;G11;2;Pop-up in map: pouste a polopouste
+17183;G11;2;Pop-up in map: pouste a polopouste
+17893;G11;2;Pop-up in map: pouste a polopouste
+20455;G11;2;Pop-up in map: pouste a polopouste
+25655;G11;2;Pop-up in map: savany a suche stepi
+26230;G11;2;Pop-up in map: pouste a polopouste
+27837;G11;2;Pop-up in map: pouste a polopouste
+28693;G11;2;Pop-up in map: pouste a polopouste
+30472;G11;2;Pop-up in map: savany a suche stepi
+31098;G11;2;Pop-up in map: pouste a polopouste
+32297;G11;2;Pop-up in map: savany a suche stepi
+33375;G11;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+34285;G11;2;Pop-up in map: savany a suche stepi
+35293;G11;2;Pop-up in map: tropicke destne lesy
+35520;G11;2;Pop-up in map: savany a suche stepi
+39137;G11;2;Pop-up in map: lesostepi a stepi
+39823;G11;2;Pop-up in map: savany a suche stepi
+40083;G11;2;Pop-up in map: pouste a polopouste
+40783;G11;2;Pop-up in map: tropicke destne lesy
+41167;G11;2;Pop-up in map: savany a suche stepi
+42853;G11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+43452;G11;2;Pop-up in map: tropicke destne lesy
+43858;G11;2;Pop-up in map: savany a suche stepi
+44822;G11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+47767;G11;2;Pop-up in map: tropicke destne lesy
+54035;G11;2;Pop-up in map: tropicke destne lesy
+55103;G11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+55925;G11;2;Pop-up in map: tropicke destne lesy
+56206;G11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+57303;G11;2;Pop-up in map: savany a suche stepi
+57745;G11;2;Pop-up in map: lesostepi a stepi
+58606;G11;2;Pop-up in map: pouste a polopouste
+59650;G11;2;Pop-up in map: savany a suche stepi
+60095;G11;2;Pop-up in map: lesostepi a stepi
+60401;G11;2;Pop-up in map: savany a suche stepi
+61401;G11;2;Pop-up in map: lesostepi a stepi
+62268;G11;2;Pop-up in map: savany a suche stepi
+63511;G11;2;Pop-up in map: vegetace stredomorskeho typu
+64446;G11;2;Pop-up in map: pouste a polopouste
+65051;G11;2;Pop-up in map: savany a suche stepi
+66835;G11;2;Pop-up in map: lesostepi a stepi
+68356;G11;2;Pop-up in map: pouste a polopouste
+69196;G11;2;Pop-up in map: vegetace stredomorskeho typu
+71888;G11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+73066;G11;2;Pop-up in map: savany a suche stepi
+74526;G11;2;Pop-up in map: tropicke destne lesy
+76203;G11;2;Pop-up in map: vegetace mocalu a bazin
+77791;G11;2;Pop-up in map: pouste a polopouste
+75396;G11;4;Zlato (hover - start)
+76300;G11;4;Zlato (click)
+76300;G11;4;Zlato (hover - end)
+28491;G12;4;Zlato (hover - start)
+37583;G12;4;Zlato (hover - end)
+38358;G12;4;Zlato (click)
+83327;G12;4;Zlato (click)
+94806;G12;4;Zlato (hover - start)
+10961;G12;2;Pop-up in map: pouste a polopouste
+11257;G12;2;Pop-up in map: listnate, jehlicnate a smisene lesy mirneho pasu
+11912;G12;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+12434;G12;2;Hover in legend: tundry a lesotundry
+34504;G12;2;Pop-up in map: vegetace stredomorskeho typu
+39624;G12;2;Pop-up in map: savany a suche stepi
+39919;G12;2;Pop-up in map: pouste a polopouste
+36906;G13;4;Zlato (hover - start)
+37696;G13;4;Zlato (click)
+37696;G13;4;Zlato (hover - end)
+5510;G13;2;Pop-up in map: savany a suche stepi
+13493;G13;2;Pop-up in map: savany a suche stepi
+16811;G13;2;Hover in legend: trvale zalednene oblasti
+17536;G13;2;Hover in legend: tundry a lesotundry
+18791;G13;2;Hover in legend: tajga
+19645;G13;2;Hover in legend: alpinska a vysokohorska vegetace
+20886;G13;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+22646;G13;2;Hover in legend: tajga
+22926;G13;2;Hover in legend: trvale zalednene oblasti
+27735;G13;2;Hover in legend: tundry a lesotundry
+30643;G13;2;Hover in legend: tajga
+30951;G13;2;Hover in legend: alpinska a vysokohorska vegetace
+33923;G13;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+38100;G13;2;Hover in legend: lesostepi a stepi
+38715;G13;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+39028;G13;2;Hover in legend: lesostepi a stepi
+42598;G13;2;Hover in legend: lesostepi a stepi
+44674;G13;2;Hover in legend: vegetace stredomorskeho typu
+50358;G13;2;Hover in legend: subtropicke lesy (suche i vlhke)
+57943;G13;2;Hover in legend: pouste a polopouste
+68246;G13;2;Hover in legend: savany a suche stepi
+74049;G13;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+79374;G13;2;Hover in legend: tropicke destne lesy
+83526;G13;2;Hover in legend: vegetace mocalu a bazin
+157439;G14;4;Zlato (hover - start)
+157807;G14;4;Zlato (click)
+157807;G14;4;Zlato (hover - end)
+12160;G14;2;Pop-up in map: tropicke destne lesy
+13722;G14;2;Pop-up in map: tropicke destne lesy
+18589;G14;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+21405;G14;2;Pop-up in map: tropicke destne lesy
+22337;G14;2;Pop-up in map: tropicke destne lesy
+23665;G14;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+25695;G14;2;Pop-up in map: savany a suche stepi
+27575;G14;2;Pop-up in map: savany a suche stepi
+31910;G14;2;Pop-up in map: savany a suche stepi
+32652;G14;2;Pop-up in map: savany a suche stepi
+33027;G14;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+33412;G14;2;Pop-up in map: savany a suche stepi
+33678;G14;2;Pop-up in map: lesostepi a stepi
+33982;G14;2;Pop-up in map: pouste a polopouste
+34867;G14;2;Pop-up in map: savany a suche stepi
+36293;G14;2;Pop-up in map: pouste a polopouste
+36788;G14;2;Pop-up in map: savany a suche stepi
+37173;G14;2;Pop-up in map: pouste a polopouste
+40923;G14;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+41980;G14;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+42085;G14;2;Pop-up in map: pouste a polopouste
+42537;G14;2;Pop-up in map: pouste a polopouste
+43027;G14;2;Pop-up in map: savany a suche stepi
+43775;G14;2;Pop-up in map: vegetace stredomorskeho typu
+33450;G15;2;Hover in legend: trvale zalednene oblasti
+36594;G15;2;Hover in legend: savany a suche stepi
+37317;G15;2;Hover in legend: lesostepi a stepi
+38435;G15;2;Hover in legend: trvale zalednene oblasti
+43317;G15;2;Hover in legend: tundry a lesotundry
+43679;G15;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+44009;G15;2;Hover in legend: savany a suche stepi
+47834;G15;2;Hover in legend: trvale zalednene oblasti
+48082;G15;2;Hover in legend: savany a suche stepi
+48335;G15;2;Hover in legend: tropicke destne lesy
+48629;G15;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+51500;G15;2;Hover in legend: tropicke destne lesy
+54197;G15;2;Hover in legend: alpinska a vysokohorska vegetace
+18136;G16;2;Pop-up in map: savany a suche stepi
+23633;G16;2;Pop-up in map: pouste a polopouste
+23909;G16;2;Pop-up in map: vegetace stredomorskeho typu
+24346;G16;2;Pop-up in map: pouste a polopouste
+24781;G16;2;Pop-up in map: vegetace stredomorskeho typu
+28256;G16;2;Pop-up in map: pouste a polopouste
+29421;G16;2;Pop-up in map: pouste a polopouste
+30179;G16;2;Pop-up in map: lesostepi a stepi
+31088;G16;2;Pop-up in map: lesostepi a stepi
+32364;G16;2;Pop-up in map: savany a suche stepi
+37142;G16;2;Pop-up in map: savany a suche stepi
+38061;G16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+40812;G16;2;Pop-up in map: savany a suche stepi
+41074;G16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+41747;G16;2;Pop-up in map: tropicke destne lesy
+43926;G16;2;Pop-up in map: savany a suche stepi
+44284;G16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+46377;G16;2;Pop-up in map: savany a suche stepi
+46964;G16;2;Pop-up in map: pouste a polopouste
+47144;G16;2;Pop-up in map: savany a suche stepi
+47782;G16;2;Pop-up in map: savany a suche stepi
+48297;G16;2;Pop-up in map: pouste a polopouste
+51426;G16;2;Pop-up in map: vegetace stredomorskeho typu
+52207;G16;2;Pop-up in map: pouste a polopouste
+52482;G16;2;Pop-up in map: vegetace stredomorskeho typu
+53442;G16;2;Pop-up in map: alpinska a vysokohorska vegetace
+54051;G16;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+54374;G16;2;Pop-up in map: pouste a polopouste
+54834;G16;2;Pop-up in map: alpinska a vysokohorska vegetace
+56464;G16;2;Pop-up in map: pouste a polopouste
+57032;G16;2;Pop-up in map: vegetace stredomorskeho typu
+59866;G16;2;Pop-up in map: pouste a polopouste
+60546;G16;2;Pop-up in map: savany a suche stepi
+64056;G16;4;Zlato (hover - start)
+66758;G16;4;Zlato (click)
+66758;G16;4;Zlato (hover - end)
+28943;G17;4;Zlato (hover - start)
+30090;G17;4;Zlato (click)
+30090;G17;4;Zlato (hover - end)
+13582;G17;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+14267;G17;2;Hover in legend: lesostepi a stepi
+15145;G17;2;Hover in legend: savany a suche stepi
+16597;G17;2;Hover in legend: pouste a polopouste
+23343;G17;2;Hover in legend: savany a suche stepi
+25828;G17;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+26813;G17;2;Hover in legend: tropicke destne lesy
+27171;G17;2;Hover in legend: vegetace mocalu a bazin
+27598;G17;2;Hover in legend: tropicke destne lesy
+28133;G17;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+30605;G17;2;Hover in legend: tropicke destne lesy
+32050;G17;2;Hover in legend: vegetace mocalu a bazin
+32396;G17;2;Hover in legend: tropicke destne lesy
+36936;G17;2;Hover in legend: vegetace mocalu a bazin
+40015;G17;2;Hover in legend: vegetace mocalu a bazin
+41041;G17;2;Hover in legend: subtropicke lesy (suche i vlhke)
+41481;G17;2;Hover in legend: tajga
+41858;G17;2;Hover in legend: tundry a lesotundry
+42448;G17;2;Hover in legend: trvale zalednene oblasti
+43071;G17;2;Hover in legend: tundry a lesotundry
+44078;G17;2;Hover in legend: tajga
+47270;G17;2;Pop-up in map: pouste a polopouste
+48536;G17;2;Hover in legend: tajga
+49140;G17;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+49471;G17;2;Hover in legend: alpinska a vysokohorska vegetace
+50563;G17;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+50970;G17;2;Hover in legend: subtropicke lesy (suche i vlhke)
+13938;G18;4;Zlato (hover - start)
+14528;G18;4;Zlato (hover - end)
+15735;G18;4;Zlato (hover - start)
+27880;G18;4;Zlato (hover - end)
+35929;G18;4;Zlato (hover - start)
+36283;G18;4;Zlato (hover - end)
+36919;G18;4;Zlato (hover - start)
+5910;G18;2;Pop-up in map: savany a suche stepi
+6775;G18;2;Pop-up in map: pouste a polopouste
+14925;G18;2;Pop-up in map: savany a suche stepi
+18555;G18;2;Pop-up in map: tropicke destne lesy
+26858;G18;2;Pop-up in map: tropicke destne lesy
+28878;G18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+29851;G18;2;Pop-up in map: savany a suche stepi
+31225;G18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+33661;G18;2;Pop-up in map: savany a suche stepi
+35398;G18;2;Pop-up in map: savany a suche stepi
+36106;G18;2;Pop-up in map: pouste a polopouste
+43158;G18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+43408;G18;2;Pop-up in map: tropicke destne lesy
+23654;G19;4;Zlato (click)
+14032;G19;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+14513;G19;2;Hover in legend: lesostepi a stepi
+16793;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+17180;G19;2;Pop-up in map: tropicke destne lesy
+17730;G19;2;Pop-up in map: tropicke destne lesy
+19400;G19;2;Pop-up in map: tropicke destne lesy
+21553;G19;2;Pop-up in map: savany a suche stepi
+21992;G19;2;Pop-up in map: pouste a polopouste
+26327;G19;2;Pop-up in map: savany a suche stepi
+26768;G19;2;Pop-up in map: pouste a polopouste
+27137;G19;2;Pop-up in map: savany a suche stepi
+28928;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+31215;G19;2;Pop-up in map: tropicke destne lesy
+33063;G19;2;Pop-up in map: tropicke destne lesy
+34643;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+35097;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+35808;G19;2;Pop-up in map: savany a suche stepi
+37597;G19;2;Pop-up in map: savany a suche stepi
+38190;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+38465;G19;2;Pop-up in map: savany a suche stepi
+40145;G19;2;Pop-up in map: tropicke destne lesy
+40850;G19;2;Pop-up in map: savany a suche stepi
+41485;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+43262;G19;2;Pop-up in map: tropicke destne lesy
+43638;G19;2;Pop-up in map: lesostepi a stepi
+48746;G19;2;Pop-up in map: savany a suche stepi
+49146;G19;2;Pop-up in map: lesostepi a stepi
+49446;G19;2;Pop-up in map: pouste a polopouste
+49736;G19;2;Pop-up in map: savany a suche stepi
+50301;G19;2;Pop-up in map: lesostepi a stepi
+50845;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+52273;G19;2;Pop-up in map: tropicke destne lesy
+53015;G19;2;Pop-up in map: tropicke destne lesy
+53421;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+53836;G19;2;Pop-up in map: savany a suche stepi
+54535;G19;2;Pop-up in map: pouste a polopouste
+55735;G19;2;Pop-up in map: savany a suche stepi
+56390;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+56650;G19;2;Pop-up in map: savany a suche stepi
+56863;G19;2;Pop-up in map: pouste a polopouste
+58250;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59105;G19;2;Pop-up in map: tropicke destne lesy
+61866;G19;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+65048;G19;2;Pop-up in map: savany a suche stepi
+66381;G19;2;Pop-up in map: pouste a polopouste
+68161;G19;2;Pop-up in map: savany a suche stepi
+7958;G21;2;Pop-up in map: tropicke destne lesy
+12777;G21;2;Hover in legend: trvale zalednene oblasti
+13470;G21;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+13802;G21;2;Hover in legend: savany a suche stepi
+14110;G21;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+14517;G21;2;Hover in legend: subtropicke lesy (suche i vlhke)
+14795;G21;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+15607;G21;2;Hover in legend: tajga
+15998;G21;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+16291;G21;2;Hover in legend: vegetace stredomorskeho typu
+16558;G21;2;Hover in legend: pouste a polopouste
+16975;G21;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+17405;G21;2;Hover in legend: vegetace mocalu a bazin
+17728;G21;2;Hover in legend: tropicke destne lesy
+18263;G21;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+18700;G21;2;Hover in legend: subtropicke lesy (suche i vlhke)
+19616;G21;2;Hover in legend: savany a suche stepi
+20188;G21;2;Hover in legend: pouste a polopouste
+22526;G21;2;Pop-up in map: pouste a polopouste
+26778;G21;2;Pop-up in map: pouste a polopouste
+28635;G21;2;Pop-up in map: pouste a polopouste
+31858;G21;2;Pop-up in map: pouste a polopouste
+32828;G21;2;Pop-up in map: savany a suche stepi
+34653;G21;2;Pop-up in map: pouste a polopouste
+34975;G21;2;Pop-up in map: savany a suche stepi
+39256;G21;2;Pop-up in map: tropicke destne lesy
+39596;G21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+41376;G21;2;Pop-up in map: tropicke destne lesy
+43375;G21;2;Pop-up in map: tropicke destne lesy
+46483;G21;2;Pop-up in map: tropicke destne lesy
+48513;G21;2;Pop-up in map: savany a suche stepi
+52904;G21;2;Pop-up in map: savany a suche stepi
+53493;G21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+55544;G21;2;Pop-up in map: vegetace stredomorskeho typu
+59326;G21;2;Pop-up in map: pouste a polopouste
+59706;G21;2;Pop-up in map: vegetace stredomorskeho typu
+60228;G21;2;Pop-up in map: pouste a polopouste
+61101;G21;2;Pop-up in map: savany a suche stepi
+61509;G21;2;Pop-up in map: pouste a polopouste
+62029;G21;2;Pop-up in map: vegetace stredomorskeho typu
+63766;G21;2;Pop-up in map: vegetace stredomorskeho typu
+64661;G21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+65293;G21;2;Pop-up in map: savany a suche stepi
+33037;G21;4;Zlato (click)
+14335;U01;2;Hover in legend: alpinska a vysokohorska vegetace
+15158;U01;2;Hover in legend: pouste a polopouste
+24201;U01;2;Hover in legend: savany a suche stepi
+31576;U01;2;Hover in legend: tropicke destne lesy
+40322;U01;4;Zlato (hover - start)
+55142;U01;4;Zlato (hover - end)
+5376;U02;2;Pop-up in map: savany a suche stepi
+6059;U02;2;Pop-up in map: pouste a polopouste
+11441;U02;2;Pop-up in map: savany a suche stepi
+13216;U02;2;Pop-up in map: savany a suche stepi
+16399;U02;2;Pop-up in map: tropicke destne lesy
+20281;U02;2;Pop-up in map: savany a suche stepi
+21696;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+22329;U02;2;Pop-up in map: tropicke destne lesy
+22553;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+22766;U02;2;Pop-up in map: tropicke destne lesy
+25456;U02;2;Pop-up in map: tropicke destne lesy
+25719;U02;2;Pop-up in map: savany a suche stepi
+26273;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+26806;U02;2;Pop-up in map: savany a suche stepi
+28858;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+29626;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+30176;U02;2;Pop-up in map: savany a suche stepi
+30463;U02;2;Pop-up in map: pouste a polopouste
+30968;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+31801;U02;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+60128;U02;4;Zlato (hover - start)
+60881;U02;4;Zlato (click)
+60881;U02;4;Zlato (hover - end)
+27393;U03;4;Zlato (hover - start)
+29958;U03;4;Zlato (hover - end)
+32130;U03;4;Zlato (hover - start)
+34076;U03;4;Zlato (hover - end)
+39488;U03;4;Zlato (hover - start)
+41248;U03;4;Zlato (hover - end)
+49473;U03;4;Zlato (hover - start)
+50066;U03;4;Zlato (hover - end)
+52066;U03;4;Zlato (hover - start)
+53171;U03;4;Zlato (hover - end)
+59743;U03;4;Zlato (hover - start)
+59993;U03;4;Zlato (hover - end)
+60273;U03;4;Zlato (hover - start)
+64135;U03;4;Zlato (hover - end)
+65883;U03;4;Zlato (hover - start)
+67788;U03;4;Zlato (click)
+67788;U03;4;Zlato (hover - end)
+10764;U03;2;Pop-up in map: tropicke destne lesy
+11031;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+11507;U03;2;Pop-up in map: tropicke destne lesy
+14884;U03;2;Hover in legend: tajga
+15239;U03;2;Hover in legend: tundry a lesotundry
+15699;U03;2;Hover in legend: vegetace stredomorskeho typu
+17834;U03;2;Pop-up in map: pouste a polopouste
+21364;U03;2;Pop-up in map: pouste a polopouste
+21812;U03;2;Pop-up in map: savany a suche stepi
+22607;U03;2;Pop-up in map: pouste a polopouste
+25975;U03;2;Pop-up in map: listnate, jehlicnate a smisene lesy mirneho pasu
+26539;U03;2;Pop-up in map: pouste a polopouste
+27534;U03;2;Pop-up in map: savany a suche stepi
+27817;U03;2;Pop-up in map: pouste a polopouste
+33362;U03;2;Pop-up in map: savany a suche stepi
+33634;U03;2;Pop-up in map: pouste a polopouste
+33835;U03;2;Pop-up in map: savany a suche stepi
+39469;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+39655;U03;2;Pop-up in map: tropicke destne lesy
+40325;U03;2;Pop-up in map: vegetace mocalu a bazin
+42302;U03;2;Pop-up in map: savany a suche stepi
+42522;U03;2;Pop-up in map: vegetace mocalu a bazin
+43044;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+46740;U03;2;Pop-up in map: tropicke destne lesy
+47539;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+48345;U03;2;Pop-up in map: tropicke destne lesy
+48929;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+49860;U03;2;Pop-up in map: tropicke destne lesy
+51095;U03;2;Pop-up in map: tropicke destne lesy
+52922;U03;2;Pop-up in map: tropicke destne lesy
+53765;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+54237;U03;2;Pop-up in map: savany a suche stepi
+56499;U03;2;Pop-up in map: savany a suche stepi
+56682;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+56855;U03;2;Pop-up in map: savany a suche stepi
+57070;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+57407;U03;2;Pop-up in map: savany a suche stepi
+57960;U03;2;Pop-up in map: tropicke destne lesy
+58179;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59072;U03;2;Pop-up in map: savany a suche stepi
+60080;U03;2;Pop-up in map: savany a suche stepi
+60720;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+61377;U03;2;Pop-up in map: tropicke destne lesy
+61737;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+61925;U03;2;Pop-up in map: savany a suche stepi
+62722;U03;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+66145;U03;2;Pop-up in map: savany a suche stepi
+71540;U03;2;Pop-up in map: pouste a polopouste
+73292;U03;2;Pop-up in map: savany a suche stepi
+73570;U03;2;Pop-up in map: pouste a polopouste
+76445;U03;2;Pop-up in map: lesostepi a stepi
+78778;U03;2;Pop-up in map: lesostepi a stepi
+79472;U03;2;Pop-up in map: lesostepi a stepi
+82228;U03;2;Pop-up in map: pouste a polopouste
+82677;U03;2;Pop-up in map: vegetace stredomorskeho typu
+83998;U03;2;Pop-up in map: pouste a polopouste
+86733;U03;2;Pop-up in map: pouste a polopouste
+87367;U03;2;Pop-up in map: vegetace stredomorskeho typu
+92032;U03;2;Pop-up in map: vegetace stredomorskeho typu
+92312;U03;2;Pop-up in map: pouste a polopouste
+94850;U03;2;Pop-up in map: savany a suche stepi
+41563;U04;2;Pop-up in map: pouste a polopouste
+42566;U04;2;Pop-up in map: savany a suche stepi
+43033;U04;2;Pop-up in map: tropicke destne lesy
+43793;U04;2;Pop-up in map: tropicke destne lesy
+45831;U04;2;Pop-up in map: savany a suche stepi
+46080;U04;2;Pop-up in map: pouste a polopouste
+53538;U04;2;Pop-up in map: vegetace mocalu a bazin
+54703;U04;2;Pop-up in map: savany a suche stepi
+64396;U04;2;Pop-up in map: tropicke destne lesy
+69099;U04;2;Pop-up in map: savany a suche stepi
+72603;U04;2;Pop-up in map: savany a suche stepi
+75571;U04;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+76996;U04;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+77883;U04;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+80571;U04;2;Pop-up in map: lesostepi a stepi
+80921;U04;2;Pop-up in map: pouste a polopouste
+22307;U04;4;Zlato (hover - start)
+22907;U04;4;Zlato (click)
+22907;U04;4;Zlato (hover - end)
+7992;U05;2;Pop-up in map: savany a suche stepi
+8992;U05;2;Pop-up in map: savany a suche stepi
+9824;U05;2;Pop-up in map: savany a suche stepi
+11136;U05;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+12772;U05;2;Hover in legend: tropicke destne lesy
+13186;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+14701;U05;2;Hover in legend: savany a suche stepi
+15229;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+15571;U05;2;Hover in legend: savany a suche stepi
+16072;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+17539;U05;2;Hover in legend: savany a suche stepi
+17917;U05;2;Hover in legend: pouste a polopouste
+18502;U05;2;Hover in legend: savany a suche stepi
+18976;U05;2;Hover in legend: subtropicke lesy (suche i vlhke)
+19636;U05;2;Hover in legend: pouste a polopouste
+20866;U05;2;Hover in legend: savany a suche stepi
+21116;U05;2;Hover in legend: tropicke destne lesy
+21307;U05;2;Hover in legend: vegetace mocalu a bazin
+21791;U05;2;Hover in legend: subtropicke lesy (suche i vlhke)
+22211;U05;2;Hover in legend: lesostepi a stepi
+23189;U05;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+32894;U05;2;Hover in legend: savany a suche stepi
+33112;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+33307;U05;2;Hover in legend: tropicke destne lesy
+34009;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+36177;U05;2;Pop-up in map: savany a suche stepi
+42300;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+42789;U05;2;Hover in legend: savany a suche stepi
+43475;U05;2;Hover in legend: pouste a polopouste
+48465;U05;2;Hover in legend: lesostepi a stepi
+48760;U05;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+49282;U05;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+49682;U05;2;Hover in legend: lesostepi a stepi
+51829;U05;2;Pop-up in map: savany a suche stepi
+52384;U05;2;Pop-up in map: pouste a polopouste
+17429;U06;4;Zlato (hover - start)
+17949;U06;4;Zlato (click)
+17949;U06;4;Zlato (hover - end)
+8945;U06;2;Pop-up in map: pouste a polopouste
+13722;U06;2;Pop-up in map: savany a suche stepi
+15345;U06;2;Pop-up in map: pouste a polopouste
+26553;U06;2;Pop-up in map: savany a suche stepi
+31760;U06;2;Pop-up in map: tropicke destne lesy
+37353;U06;2;Pop-up in map: tropicke destne lesy
+20996;U07;2;Pop-up in map: pouste a polopouste
+21328;U07;2;Pop-up in map: savany a suche stepi
+171158;U07;4;Zlato (click)
+29414;U08;4;Zlato (hover - start)
+30828;U08;4;Zlato (hover - end)
+33339;U08;4;Zlato (hover - start)
+48396;U08;4;Zlato (hover - end)
+73954;U08;4;Zlato (hover - start)
+75309;U08;4;Zlato (hover - end)
+87622;U08;4;Zlato (hover - start)
+88682;U08;4;Zlato (hover - end)
+92001;U08;4;Zlato (hover - start)
+99119;U08;4;Zlato (hover - end)
+101559;U08;4;Zlato (hover - start)
+103285;U08;4;Zlato (hover - end)
+107010;U08;4;Zlato (hover - start)
+108594;U08;4;Zlato (hover - end)
+6518;U08;2;Pop-up in map: savany a suche stepi
+7961;U08;2;Pop-up in map: pouste a polopouste
+8568;U08;2;Pop-up in map: savany a suche stepi
+10871;U08;2;Pop-up in map: pouste a polopouste
+14235;U08;2;Pop-up in map: savany a suche stepi
+15321;U08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+15626;U08;2;Pop-up in map: savany a suche stepi
+16330;U08;2;Pop-up in map: pouste a polopouste
+17341;U08;2;Pop-up in map: savany a suche stepi
+20323;U08;2;Pop-up in map: tropicke destne lesy
+21580;U08;2;Pop-up in map: tropicke destne lesy
+24638;U08;2;Pop-up in map: tropicke destne lesy
+24966;U08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+25208;U08;2;Pop-up in map: tropicke destne lesy
+26475;U08;2;Pop-up in map: savany a suche stepi
+27730;U08;2;Pop-up in map: lesostepi a stepi
+28413;U08;2;Pop-up in map: savany a suche stepi
+30673;U08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+33596;U08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+37355;U08;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+37941;U08;2;Pop-up in map: savany a suche stepi
+38853;U08;2;Pop-up in map: savany a suche stepi
+39901;U08;2;Pop-up in map: tropicke destne lesy
+40216;U08;2;Pop-up in map: savany a suche stepi
+42944;U08;2;Pop-up in map: pouste a polopouste
+44071;U08;2;Pop-up in map: pouste a polopouste
+44888;U08;2;Pop-up in map: vegetace stredomorskeho typu
+45788;U08;2;Pop-up in map: pouste a polopouste
+47679;U08;2;Pop-up in map: vegetace stredomorskeho typu
+49796;U08;2;Pop-up in map: pouste a polopouste
+50188;U08;2;Pop-up in map: savany a suche stepi
+50496;U08;2;Pop-up in map: pouste a polopouste
+51444;U08;2;Pop-up in map: pouste a polopouste
+52398;U08;2;Pop-up in map: vegetace stredomorskeho typu
+52736;U08;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+53111;U08;2;Pop-up in map: pouste a polopouste
+53508;U08;2;Pop-up in map: alpinska a vysokohorska vegetace
+53779;U08;2;Pop-up in map: pouste a polopouste
+55816;U08;2;Pop-up in map: savany a suche stepi
+19460;U09;2;Pop-up in map: savany a suche stepi
+19766;U09;2;Pop-up in map: alpinska a vysokohorska vegetace
+20011;U09;2;Pop-up in map: pouste a polopouste
+20585;U09;2;Pop-up in map: pouste a polopouste
+21128;U09;2;Pop-up in map: vegetace stredomorskeho typu
+23374;U09;2;Pop-up in map: tropicke destne lesy
+25261;U09;2;Pop-up in map: pouste a polopouste
+25614;U09;2;Pop-up in map: vegetace stredomorskeho typu
+26524;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+27151;U09;2;Pop-up in map: savany a suche stepi
+27408;U09;2;Pop-up in map: pouste a polopouste
+28483;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+28788;U09;2;Pop-up in map: tropicke destne lesy
+29053;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+29559;U09;2;Pop-up in map: savany a suche stepi
+31783;U09;2;Pop-up in map: savany a suche stepi
+31953;U09;2;Pop-up in map: pouste a polopouste
+32384;U09;2;Pop-up in map: savany a suche stepi
+33051;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+34734;U09;2;Pop-up in map: pouste a polopouste
+35399;U09;2;Pop-up in map: alpinska a vysokohorska vegetace
+35668;U09;2;Pop-up in map: vegetace stredomorskeho typu
+35973;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+36201;U09;2;Pop-up in map: vegetace stredomorskeho typu
+36751;U09;2;Pop-up in map: vegetace stredomorskeho typu
+37379;U09;2;Pop-up in map: pouste a polopouste
+37861;U09;2;Pop-up in map: vegetace stredomorskeho typu
+42878;U09;2;Pop-up in map: pouste a polopouste
+43319;U09;2;Pop-up in map: pouste a polopouste
+44183;U09;2;Pop-up in map: pouste a polopouste
+44451;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+49648;U09;2;Pop-up in map: pouste a polopouste
+50251;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+50721;U09;2;Pop-up in map: pouste a polopouste
+52981;U09;2;Pop-up in map: pouste a polopouste
+57243;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+63176;U09;2;Pop-up in map: vegetace stredomorskeho typu
+63594;U09;2;Pop-up in map: alpinska a vysokohorska vegetace
+64736;U09;2;Pop-up in map: pouste a polopouste
+65987;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+66472;U09;2;Pop-up in map: pouste a polopouste
+66829;U09;2;Pop-up in map: alpinska a vysokohorska vegetace
+67192;U09;2;Pop-up in map: pouste a polopouste
+67877;U09;2;Pop-up in map: vegetace stredomorskeho typu
+68279;U09;2;Pop-up in map: pouste a polopouste
+68949;U09;2;Pop-up in map: pouste a polopouste
+69296;U09;2;Pop-up in map: alpinska a vysokohorska vegetace
+71572;U09;2;Pop-up in map: pouste a polopouste
+72609;U09;2;Pop-up in map: savany a suche stepi
+73049;U09;2;Pop-up in map: pouste a polopouste
+74202;U09;2;Pop-up in map: vegetace mocalu a bazin
+75711;U09;2;Pop-up in map: savany a suche stepi
+76096;U09;2;Pop-up in map: pouste a polopouste
+85506;U09;2;Pop-up in map: savany a suche stepi
+85822;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+86754;U09;2;Pop-up in map: savany a suche stepi
+87141;U09;2;Pop-up in map: vegetace mocalu a bazin
+89377;U09;2;Pop-up in map: pouste a polopouste
+89854;U09;2;Pop-up in map: savany a suche stepi
+90284;U09;2;Pop-up in map: vegetace mocalu a bazin
+94057;U09;2;Pop-up in map: savany a suche stepi
+94857;U09;2;Pop-up in map: vegetace mocalu a bazin
+95451;U09;2;Pop-up in map: savany a suche stepi
+95624;U09;2;Pop-up in map: pouste a polopouste
+96407;U09;2;Pop-up in map: vegetace mocalu a bazin
+97132;U09;2;Pop-up in map: vegetace mocalu a bazin
+97957;U09;2;Pop-up in map: savany a suche stepi
+98399;U09;2;Pop-up in map: vegetace mocalu a bazin
+99552;U09;2;Pop-up in map: savany a suche stepi
+100597;U09;2;Pop-up in map: savany a suche stepi
+103614;U09;2;Pop-up in map: pouste a polopouste
+104154;U09;2;Pop-up in map: savany a suche stepi
+105701;U09;2;Pop-up in map: pouste a polopouste
+106699;U09;2;Pop-up in map: savany a suche stepi
+107482;U09;2;Pop-up in map: savany a suche stepi
+108084;U09;2;Pop-up in map: pouste a polopouste
+108377;U09;2;Pop-up in map: savany a suche stepi
+108692;U09;2;Pop-up in map: lesostepi a stepi
+109172;U09;2;Pop-up in map: savany a suche stepi
+110380;U09;2;Pop-up in map: pouste a polopouste
+110659;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+110969;U09;2;Pop-up in map: savany a suche stepi
+113652;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+114697;U09;2;Pop-up in map: tropicke destne lesy
+115052;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+115239;U09;2;Pop-up in map: savany a suche stepi
+115439;U09;2;Pop-up in map: tropicke destne lesy
+116487;U09;2;Pop-up in map: savany a suche stepi
+117757;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+118024;U09;2;Pop-up in map: savany a suche stepi
+119364;U09;2;Pop-up in map: savany a suche stepi
+120117;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+121107;U09;2;Pop-up in map: savany a suche stepi
+121369;U09;2;Pop-up in map: tropicke destne lesy
+121792;U09;2;Pop-up in map: tropicke destne lesy
+122902;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+125107;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+126582;U09;2;Pop-up in map: savany a suche stepi
+126864;U09;2;Pop-up in map: lesostepi a stepi
+129324;U09;2;Pop-up in map: pouste a polopouste
+130214;U09;2;Pop-up in map: lesostepi a stepi
+130590;U09;2;Pop-up in map: savany a suche stepi
+130964;U09;2;Pop-up in map: lesostepi a stepi
+131704;U09;2;Pop-up in map: tropicke destne lesy
+132335;U09;2;Pop-up in map: savany a suche stepi
+132930;U09;2;Pop-up in map: pouste a polopouste
+137440;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+137594;U09;2;Pop-up in map: savany a suche stepi
+137739;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+138432;U09;2;Pop-up in map: savany a suche stepi
+140117;U09;2;Pop-up in map: tropicke destne lesy
+140499;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+141172;U09;2;Pop-up in map: tropicke destne lesy
+141947;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+142407;U09;2;Pop-up in map: tropicke destne lesy
+145042;U09;2;Pop-up in map: vegetace mocalu a bazin
+145324;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+145767;U09;2;Pop-up in map: savany a suche stepi
+146810;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+149755;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+150360;U09;2;Pop-up in map: savany a suche stepi
+151172;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+152140;U09;2;Pop-up in map: savany a suche stepi
+153062;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+153358;U09;2;Pop-up in map: savany a suche stepi
+153735;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+155092;U09;2;Pop-up in map: tropicke destne lesy
+155417;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+156853;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+158473;U09;2;Pop-up in map: savany a suche stepi
+159243;U09;2;Pop-up in map: tropicke destne lesy
+159470;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+160042;U09;2;Pop-up in map: savany a suche stepi
+160368;U09;2;Pop-up in map: tropicke destne lesy
+160938;U09;2;Pop-up in map: savany a suche stepi
+161440;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+162768;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+163185;U09;2;Pop-up in map: savany a suche stepi
+163683;U09;2;Pop-up in map: pouste a polopouste
+163683;U09;2;Pop-up in map: pouste a polopouste
+163890;U09;2;Pop-up in map: lesostepi a stepi
+165505;U09;2;Pop-up in map: savany a suche stepi
+168343;U09;2;Pop-up in map: pouste a polopouste
+170033;U09;2;Pop-up in map: savany a suche stepi
+170472;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+171348;U09;2;Pop-up in map: pouste a polopouste
+172470;U09;2;Pop-up in map: lesostepi a stepi
+172695;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+173790;U09;2;Pop-up in map: savany a suche stepi
+174418;U09;2;Pop-up in map: vegetace stredomorskeho typu
+174702;U09;2;Pop-up in map: pouste a polopouste
+175755;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+176042;U09;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+176772;U09;2;Pop-up in map: pouste a polopouste
+177125;U09;2;Pop-up in map: vegetace stredomorskeho typu
+177742;U09;2;Pop-up in map: vegetace stredomorskeho typu
+178817;U09;2;Pop-up in map: pouste a polopouste
+179025;U09;2;Pop-up in map: savany a suche stepi
+179293;U09;2;Pop-up in map: pouste a polopouste
+180052;U09;2;Pop-up in map: vegetace stredomorskeho typu
+180210;U09;2;Pop-up in map: pouste a polopouste
+180707;U09;2;Pop-up in map: vegetace stredomorskeho typu
+182025;U09;2;Pop-up in map: savany a suche stepi
+183267;U09;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+184153;U09;2;Pop-up in map: savany a suche stepi
+184722;U09;2;Pop-up in map: tropicke destne lesy
+185035;U09;2;Pop-up in map: savany a suche stepi
+26465;U10;2;Pop-up in map: pouste a polopouste
+27422;U10;2;Pop-up in map: savany a suche stepi
+27732;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+28459;U10;2;Pop-up in map: savany a suche stepi
+29199;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+29979;U10;2;Pop-up in map: tropicke destne lesy
+34180;U10;2;Pop-up in map: tropicke destne lesy
+35612;U10;2;Pop-up in map: savany a suche stepi
+37617;U10;2;Pop-up in map: tropicke destne lesy
+38157;U10;2;Pop-up in map: savany a suche stepi
+41080;U10;2;Pop-up in map: tropicke destne lesy
+45952;U10;2;Pop-up in map: savany a suche stepi
+46205;U10;2;Pop-up in map: tropicke destne lesy
+46519;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+46839;U10;2;Pop-up in map: tropicke destne lesy
+50414;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+50814;U10;2;Pop-up in map: pouste a polopouste
+61222;U10;2;Pop-up in map: savany a suche stepi
+63052;U10;2;Pop-up in map: savany a suche stepi
+63495;U10;2;Pop-up in map: pouste a polopouste
+65668;U10;2;Pop-up in map: tropicke destne lesy
+67242;U10;2;Pop-up in map: savany a suche stepi
+67973;U10;2;Pop-up in map: pouste a polopouste
+69275;U10;2;Pop-up in map: pouste a polopouste
+70597;U10;2;Pop-up in map: pouste a polopouste
+71435;U10;2;Pop-up in map: vegetace stredomorskeho typu
+72038;U10;2;Pop-up in map: pouste a polopouste
+72443;U10;2;Pop-up in map: lesostepi a stepi
+72872;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+73400;U10;2;Pop-up in map: savany a suche stepi
+74252;U10;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+75008;U10;2;Hover in legend: lesostepi a stepi
+83827;U10;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+84087;U10;2;Pop-up in map: tropicke destne lesy
+81644;U10;4;Zlato (hover - start)
+82579;U10;4;Zlato (click)
+82579;U10;4;Zlato (hover - end)
+5848;U11;2;Pop-up in map: savany a suche stepi
+7586;U11;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+8543;U11;2;Pop-up in map: savany a suche stepi
+10176;U11;2;Hover in legend: tundry a lesotundry
+11615;U11;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+12410;U11;2;Hover in legend: tajga
+13601;U11;2;Hover in legend: savany a suche stepi
+14481;U11;2;Hover in legend: vegetace mocalu a bazin
+14851;U11;2;Hover in legend: tropicke destne lesy
+15298;U11;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+16120;U11;2;Hover in legend: tropicke destne lesy
+16535;U11;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+16965;U11;2;Hover in legend: pouste a polopouste
+17738;U11;2;Hover in legend: lesostepi a stepi
+19200;U11;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+20323;U11;2;Hover in legend: subtropicke lesy (suche i vlhke)
+21048;U11;2;Hover in legend: vegetace mocalu a bazin
+21335;U11;2;Hover in legend: tropicke destne lesy
+22015;U11;2;Hover in legend: savany a suche stepi
+22598;U11;2;Hover in legend: pouste a polopouste
+29844;U11;2;Hover in legend: vegetace mocalu a bazin
+30128;U11;2;Hover in legend: tropicke destne lesy
+34036;U11;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+41994;U11;2;Hover in legend: savany a suche stepi
+50924;U11;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+51423;U11;2;Hover in legend: savany a suche stepi
+58313;U11;2;Hover in legend: pouste a polopouste
+40454;U11;4;Zlato (hover - start)
+41110;U11;4;Zlato (click)
+41110;U11;4;Zlato (hover - end)
+8380;U12;2;Pop-up in map: trvale zalednene oblasti
+14109;U12;2;Pop-up in map: savany a suche stepi
+21727;U12;2;Hover in legend: vegetace mocalu a bazin
+25078;U12;2;Hover in legend: lesostepi a stepi
+25625;U12;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+26152;U12;2;Hover in legend: lesostepi a stepi
+28240;U12;2;Hover in legend: lesostepi a stepi
+28698;U12;2;Hover in legend: vegetace stredomorskeho typu
+59487;U12;2;Hover in legend: vegetace stredomorskeho typu
+59918;U12;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+93656;U12;2;Hover in legend: tropicke destne lesy
+94340;U12;2;Hover in legend: subtropicke lesy (suche i vlhke)
+96341;U12;2;Hover in legend: alpinska a vysokohorska vegetace
+39706;U12;4;Zlato (hover - start)
+43694;U12;4;Zlato (hover - end)
+47418;U12;4;Zlato (hover - start)
+48809;U12;4;Zlato (click)
+48809;U12;4;Zlato (hover - end)
+7622;U14;2;Pop-up in map: pouste a polopouste
+9062;U14;2;Pop-up in map: vegetace stredomorskeho typu
+9815;U14;2;Pop-up in map: pouste a polopouste
+11250;U14;2;Pop-up in map: savany a suche stepi
+14217;U14;2;Pop-up in map: tropicke destne lesy
+14778;U14;2;Pop-up in map: savany a suche stepi
+15237;U14;2;Pop-up in map: tropicke destne lesy
+17243;U14;2;Pop-up in map: savany a suche stepi
+17537;U14;2;Pop-up in map: pouste a polopouste
+18348;U14;2;Pop-up in map: vegetace stredomorskeho typu
+18802;U14;2;Pop-up in map: pouste a polopouste
+19785;U14;2;Pop-up in map: pouste a polopouste
+21810;U14;2;Pop-up in map: tropicke destne lesy
+23703;U14;2;Pop-up in map: pouste a polopouste
+24927;U14;2;Pop-up in map: listnate, jehlicnate a smisene lesy mirneho pasu
+25295;U14;2;Pop-up in map: vegetace stredomorskeho typu
+25592;U14;2;Pop-up in map: pouste a polopouste
+26160;U14;2;Pop-up in map: savany a suche stepi
+26552;U14;2;Pop-up in map: pouste a polopouste
+28462;U14;2;Pop-up in map: savany a suche stepi
+28735;U14;2;Pop-up in map: pouste a polopouste
+33520;U14;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+34550;U14;2;Pop-up in map: pouste a polopouste
+35306;U14;2;Pop-up in map: vegetace stredomorskeho typu
+36388;U14;2;Pop-up in map: savany a suche stepi
+36710;U14;2;Pop-up in map: pouste a polopouste
+37803;U14;2;Pop-up in map: vegetace stredomorskeho typu
+19572;U14;4;Zlato (click)
+44622;U15;4;Zlato (click)
+20680;U15;2;Pop-up in map: pouste a polopouste
+23644;U15;2;Pop-up in map: savany a suche stepi
+24957;U15;2;Pop-up in map: savany a suche stepi
+27805;U15;2;Pop-up in map: pouste a polopouste
+29424;U15;2;Pop-up in map: savany a suche stepi
+29809;U15;2;Pop-up in map: pouste a polopouste
+30715;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+31122;U15;2;Pop-up in map: savany a suche stepi
+31794;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+32260;U15;2;Pop-up in map: pouste a polopouste
+32437;U15;2;Pop-up in map: savany a suche stepi
+34069;U15;2;Pop-up in map: tropicke destne lesy
+36592;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+37625;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+38887;U15;2;Pop-up in map: pouste a polopouste
+39635;U15;2;Pop-up in map: savany a suche stepi
+39990;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+40323;U15;2;Pop-up in map: pouste a polopouste
+40522;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+41767;U15;2;Pop-up in map: tropicke destne lesy
+42392;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+46495;U15;2;Pop-up in map: pouste a polopouste
+48227;U15;2;Pop-up in map: pouste a polopouste
+48778;U15;2;Pop-up in map: savany a suche stepi
+49700;U15;2;Pop-up in map: savany a suche stepi
+49937;U15;2;Pop-up in map: pouste a polopouste
+51610;U15;2;Pop-up in map: pouste a polopouste
+52547;U15;2;Pop-up in map: tropicke destne lesy
+52740;U15;2;Pop-up in map: pouste a polopouste
+53080;U15;2;Pop-up in map: tropicke destne lesy
+53450;U15;2;Pop-up in map: savany a suche stepi
+55288;U15;2;Pop-up in map: tropicke destne lesy
+57105;U15;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59308;U15;2;Pop-up in map: tropicke destne lesy
+46943;U16;2;Pop-up in map: pouste a polopouste
+47201;U16;2;Pop-up in map: savany a suche stepi
+47655;U16;2;Pop-up in map: pouste a polopouste
+48573;U16;2;Pop-up in map: tropicke destne lesy
+50458;U16;2;Pop-up in map: savany a suche stepi
+51113;U16;2;Pop-up in map: pouste a polopouste
+53958;U16;2;Pop-up in map: tropicke destne lesy
+56656;U16;2;Pop-up in map: tropicke destne lesy
+58941;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+65956;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+66718;U16;2;Pop-up in map: savany a suche stepi
+66961;U16;2;Pop-up in map: tropicke destne lesy
+67639;U16;2;Pop-up in map: savany a suche stepi
+68753;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+69544;U16;2;Pop-up in map: savany a suche stepi
+72613;U16;2;Pop-up in map: pouste a polopouste
+79916;U16;2;Pop-up in map: pouste a polopouste
+81206;U16;2;Pop-up in map: pouste a polopouste
+83314;U16;2;Pop-up in map: pouste a polopouste
+85678;U16;2;Pop-up in map: savany a suche stepi
+90524;U16;2;Pop-up in map: pouste a polopouste
+92398;U16;2;Pop-up in map: pouste a polopouste
+93534;U16;2;Pop-up in map: lesostepi a stepi
+94768;U16;2;Pop-up in map: pouste a polopouste
+95083;U16;2;Pop-up in map: lesostepi a stepi
+96158;U16;2;Pop-up in map: savany a suche stepi
+97294;U16;2;Pop-up in map: lesostepi a stepi
+97498;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+100683;U16;2;Pop-up in map: savany a suche stepi
+102533;U16;2;Pop-up in map: savany a suche stepi
+103182;U16;2;Pop-up in map: lesostepi a stepi
+103842;U16;2;Pop-up in map: savany a suche stepi
+105254;U16;2;Pop-up in map: lesostepi a stepi
+107594;U16;2;Pop-up in map: savany a suche stepi
+109646;U16;2;Pop-up in map: lesostepi a stepi
+110729;U16;2;Pop-up in map: pouste a polopouste
+114157;U16;2;Pop-up in map: vegetace stredomorskeho typu
+116357;U16;2;Pop-up in map: pouste a polopouste
+118194;U16;2;Pop-up in map: savany a suche stepi
+118512;U16;2;Pop-up in map: pouste a polopouste
+119551;U16;2;Pop-up in map: pouste a polopouste
+124106;U16;2;Pop-up in map: alpinska a vysokohorska vegetace
+125629;U16;2;Pop-up in map: pouste a polopouste
+126412;U16;2;Pop-up in map: savany a suche stepi
+127216;U16;2;Pop-up in map: tropicke destne lesy
+127401;U16;2;Pop-up in map: savany a suche stepi
+129211;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+129457;U16;2;Pop-up in map: savany a suche stepi
+132109;U16;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+133160;U16;2;Pop-up in map: pouste a polopouste
+134625;U16;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+135992;U16;2;Pop-up in map: pouste a polopouste
+36044;U16;4;Zlato (click)
+7182;U17;2;Pop-up in map: pouste a polopouste
+9959;U17;2;Hover in legend: alpinska a vysokohorska vegetace
+17421;U17;2;Pop-up in map: tropicke destne lesy
+17914;U17;2;Pop-up in map: tropicke destne lesy
+21312;U17;2;Pop-up in map: tropicke destne lesy
+22922;U17;2;Pop-up in map: savany a suche stepi
+26959;U17;2;Pop-up in map: pouste a polopouste
+30992;U17;2;Pop-up in map: vegetace stredomorskeho typu
+50990;U17;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+51415;U17;2;Pop-up in map: tropicke destne lesy
+52174;U17;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+54797;U17;2;Pop-up in map: savany a suche stepi
+58577;U17;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+59488;U17;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+64005;U17;2;Pop-up in map: savany a suche stepi
+48837;U17;4;Zlato (hover - start)
+52537;U17;4;Zlato (hover - end)
+61867;U17;4;Zlato (hover - start)
+65133;U17;4;Zlato (hover - end)
+66665;U17;4;Zlato (hover - start)
+81923;U17;4;Zlato (hover - end)
+84141;U17;4;Zlato (hover - start)
+85603;U17;4;Zlato (hover - end)
+88766;U17;4;Zlato (hover - start)
+83816;U18;2;Pop-up in map: pouste a polopouste
+84406;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+84859;U18;2;Pop-up in map: savany a suche stepi
+86089;U18;2;Hover in legend: tajga
+86341;U18;2;Hover in legend: tundry a lesotundry
+87502;U18;2;Pop-up in map: savany a suche stepi
+89082;U18;2;Pop-up in map: savany a suche stepi
+99619;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+102341;U18;2;Pop-up in map: pouste a polopouste
+105566;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+107817;U18;2;Pop-up in map: savany a suche stepi
+114364;U18;2;Pop-up in map: savany a suche stepi
+118240;U18;2;Pop-up in map: pouste a polopouste
+118934;U18;2;Pop-up in map: savany a suche stepi
+122780;U18;2;Pop-up in map: pouste a polopouste
+123322;U18;2;Pop-up in map: lesostepi a stepi
+125140;U18;2;Pop-up in map: savany a suche stepi
+125689;U18;2;Pop-up in map: savany a suche stepi
+126305;U18;2;Pop-up in map: vegetace mocalu a bazin
+126567;U18;2;Pop-up in map: savany a suche stepi
+127469;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+127657;U18;2;Pop-up in map: savany a suche stepi
+128210;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+129782;U18;2;Pop-up in map: savany a suche stepi
+130467;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+131230;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+132677;U18;2;Pop-up in map: tropicke destne lesy
+134650;U18;2;Pop-up in map: savany a suche stepi
+136029;U18;2;Pop-up in map: pouste a polopouste
+136270;U18;2;Pop-up in map: savany a suche stepi
+136817;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+138330;U18;2;Pop-up in map: vegetace stredomorskeho typu
+139195;U18;2;Pop-up in map: pouste a polopouste
+139760;U18;2;Pop-up in map: savany a suche stepi
+140309;U18;2;Pop-up in map: tropicke destne lesy
+140647;U18;2;Pop-up in map: pouste a polopouste
+141050;U18;2;Pop-up in map: vegetace stredomorskeho typu
+141830;U18;2;Pop-up in map: pouste a polopouste
+142547;U18;2;Pop-up in map: savany a suche stepi
+143354;U18;2;Pop-up in map: pouste a polopouste
+145269;U18;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+147049;U18;2;Pop-up in map: savany a suche stepi
+147402;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+148557;U18;2;Pop-up in map: lesostepi a stepi
+149035;U18;2;Pop-up in map: savany a suche stepi
+149280;U18;2;Pop-up in map: subtropicke lesy (suche i vlhke)
+150284;U18;2;Pop-up in map: savany a suche stepi
+150670;U18;2;Pop-up in map: lesostepi a stepi
+152032;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+152247;U18;2;Pop-up in map: savany a suche stepi
+160390;U18;2;Pop-up in map: savany a suche stepi
+164343;U18;2;Pop-up in map: pouste a polopouste
+170937;U18;2;Pop-up in map: savany a suche stepi
+178435;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+178623;U18;2;Pop-up in map: pouste a polopouste
+181547;U18;2;Pop-up in map: savany a suche stepi
+182612;U18;2;Pop-up in map: pouste a polopouste
+184188;U18;2;Pop-up in map: vegetace stredomorskeho typu
+186048;U18;2;Pop-up in map: pouste a polopouste
+186990;U18;2;Pop-up in map: pouste a polopouste
+193065;U18;2;Pop-up in map: vegetace stredomorskeho typu
+195200;U18;2;Pop-up in map: pouste a polopouste
+198355;U18;2;Pop-up in map: vegetace stredomorskeho typu
+199108;U18;2;Pop-up in map: vegetace stredomorskeho typu
+200271;U18;2;Pop-up in map: pouste a polopouste
+202171;U18;2;Pop-up in map: vegetace stredomorskeho typu
+202681;U18;2;Pop-up in map: pouste a polopouste
+203471;U18;2;Pop-up in map: vegetace mocalu a bazin
+203741;U18;2;Pop-up in map: pouste a polopouste
+205020;U18;2;Pop-up in map: savany a suche stepi
+206453;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+208715;U18;2;Pop-up in map: savany a suche stepi
+209675;U18;2;Pop-up in map: tropicke destne lesy
+210965;U18;2;Pop-up in map: tropicke destne lesy
+213371;U18;2;Pop-up in map: tropicke destne lesy
+216223;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+217153;U18;2;Pop-up in map: tropicke destne lesy
+219751;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+227096;U18;2;Pop-up in map: savany a suche stepi
+228263;U18;2;Pop-up in map: savany a suche stepi
+229368;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+229540;U18;2;Pop-up in map: savany a suche stepi
+229803;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+233441;U18;2;Pop-up in map: pouste a polopouste
+233741;U18;2;Pop-up in map: savany a suche stepi
+236618;U18;2;Pop-up in map: pouste a polopouste
+238181;U18;2;Pop-up in map: vegetace stredomorskeho typu
+238864;U18;2;Pop-up in map: savany a suche stepi
+239588;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+241246;U18;2;Pop-up in map: savany a suche stepi
+242813;U18;2;Pop-up in map: pouste a polopouste
+246604;U18;2;Pop-up in map: savany a suche stepi
+247094;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+248088;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+251816;U18;2;Pop-up in map: savany a suche stepi
+255633;U18;2;Pop-up in map: pouste a polopouste
+256301;U18;2;Pop-up in map: savany a suche stepi
+256748;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+256933;U18;2;Pop-up in map: savany a suche stepi
+257701;U18;2;Pop-up in map: pouste a polopouste
+257971;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+258683;U18;2;Pop-up in map: savany a suche stepi
+259594;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+260006;U18;2;Pop-up in map: savany a suche stepi
+263969;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+264639;U18;2;Pop-up in map: vegetace mocalu a bazin
+265376;U18;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+28231;U18;4;Zlato (hover - start)
+30210;U18;4;Zlato (click)
+30210;U18;4;Zlato (hover - end)
+32542;U19;4;Zlato (click)
+50379;U20;4;Zlato (hover - start)
+50664;U20;4;Zlato (hover - end)
+51503;U20;4;Zlato (click)
+27174;U20;2;Pop-up in map: lesostepi a stepi
+29582;U20;2;Hover in legend: alpinska a vysokohorska vegetace
+30080;U20;2;Hover in legend: subtropicke lesy (suche i vlhke)
+31072;U20;2;Pop-up in map: tropicke destne lesy
+31807;U20;2;Pop-up in map: savany a suche stepi
+35708;U20;2;Pop-up in map: savany a suche stepi
+38248;U20;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+38712;U20;2;Hover in legend: vegetace mocalu a bazin
+39162;U20;2;Hover in legend: tropicke destne lesy
+42362;U20;2;Hover in legend: tropicke a subtropicke lesy (suche a vlhke)
+47498;U20;2;Hover in legend: pouste a polopouste
+48268;U20;2;Hover in legend: savany a suche stepi
+49823;U20;2;Hover in legend: pouste a polopouste
+52743;U20;2;Hover in legend: subtropicke lesy (suche i vlhke)
+53320;U20;2;Hover in legend: pouste a polopouste
+53765;U20;2;Hover in legend: subtropicke lesy (suche i vlhke)
+54295;U20;2;Hover in legend: pouste a polopouste
+57725;U20;2;Hover in legend: vegetace stredomorskeho typu
+58453;U20;2;Hover in legend: lesostepi a stepi
+61480;U20;2;Pop-up in map: savany a suche stepi
+27362;U21;4;Zlato (hover - start)
+28160;U21;4;Zlato (click)
+28160;U21;4;Zlato (hover - end)
+41058;U21;2;Pop-up in map: savany a suche stepi
+42006;U21;2;Pop-up in map: tropicke destne lesy
+47841;U21;2;Pop-up in map: lesostepi a stepi
+48175;U21;2;Pop-up in map: tundry a lesotundry
+49318;U21;2;Pop-up in map: savany a suche stepi
+49973;U21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+50360;U21;2;Pop-up in map: tropicke destne lesy
+51755;U21;2;Pop-up in map: tropicke destne lesy
+52435;U21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+53415;U21;2;Pop-up in map: tropicke destne lesy
+53793;U21;2;Pop-up in map: savany a suche stepi
+54093;U21;2;Pop-up in map: pouste a polopouste
+56273;U21;2;Pop-up in map: pouste a polopouste
+58333;U21;2;Pop-up in map: savany a suche stepi
+58915;U21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+61798;U21;2;Pop-up in map: pouste a polopouste
+62143;U21;2;Pop-up in map: savany a suche stepi
+62558;U21;2;Pop-up in map: pouste a polopouste
+64634;U21;2;Pop-up in map: tropicke destne lesy
+65121;U21;2;Pop-up in map: savany a suche stepi
+67413;U21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+67738;U21;2;Pop-up in map: tropicke destne lesy
+68409;U21;2;Pop-up in map: savany a suche stepi
+69089;U21;2;Pop-up in map: tropicke destne lesy
+73199;U21;2;Pop-up in map: tropicke destne lesy
+73581;U21;2;Pop-up in map: tropicke a subtropicke lesy (suche i vlhke)
+73888;U21;2;Pop-up in map: savany a suche stepi
+28106;U22;2;Pop-up in map: tropicke destne lesy
+32283;U22;2;Pop-up in map: tropicke destne lesy
+39736;U22;2;Pop-up in map: savany a suche stepi
+44651;U22;2;Pop-up in map: pouste a polopouste
+48218;U22;2;Pop-up in map: tropicke destne lesy
+48444;U22;2;Pop-up in map: savany a suche stepi
+21367;U22;4;Zlato (hover - start)
+42537;U22;4;Zlato (hover - end)
+43245;U22;4;Zlato (hover - start)
+43742;U22;4;Zlato (click)
+43742;U22;4;Zlato (hover - end)
+5886;U23;2;Pop-up in map: savany a suche stepi
+8180;U23;2;Hover in legend: trvale zalednene oblasti
+8465;U23;2;Hover in legend: tundry a lesotundry
+8952;U23;2;Hover in legend: listnate, jehlicnate a smisene lesy mirneho pasu
+9747;U23;2;Pop-up in map: tropicke destne lesy
+28075;U23;4;Zlato (hover - start)
+29328;U23;4;Zlato (hover - end)
+29815;U23;4;Zlato (hover - start)
+48468;U23;4;Zlato (hover - end)
+51286;U23;4;Zlato (hover - start)
+56223;U23;4;Zlato (hover - end)
+57975;U23;4;Zlato (hover - start)
+73586;U23;4;Zlato (hover - end)
+76854;U23;4;Zlato (hover - start)
+78571;U23;4;Zlato (hover - end)
+81573;U23;4;Zlato (hover - start)
+93076;U23;4;Zlato (hover - end)
+100646;U23;4;Zlato (hover - start)
+101268;U23;4;Zlato (hover - end)
+103134;U23;4;Zlato (hover - start)
+16819;U24;2;Pop-up in map: pouste a polopouste
+19494;U24;2;Pop-up in map: pouste a polopouste
+20983;U24;2;Pop-up in map: savany a suche stepi
+22463;U24;2;Hover in legend: tundry a lesotundry
+24228;U24;2;Hover in legend: tajga
